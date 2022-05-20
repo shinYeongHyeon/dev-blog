@@ -7,43 +7,43 @@ export const darkTheme = createTheme({
             " 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR'," +
             " 'Malgun Gothic', sans-serif",
         h1: {
-            fontSize: '1.5rem',
+            fontSize: '2.5rem',
             fontWeight: 'bold',
         },
         h2: {
-            fontSize: '1.25rem',
+            fontSize: '2.25rem',
             fontWeight: 'bold',
         },
         h3: {
-            fontSize: '1.125rem',
+            fontSize: '2rem',
             fontWeight: 'bold',
         },
         h4: {
-            fontSize: '1.125rem',
-            fontWeight: 'normal',
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
         },
         h5: {
-            fontSize: '0.875rem',
+            fontSize: '1.25rem',
             fontWeight: 'bold',
         },
         h6: {
-            fontSize: '0.875rem',
-            fontWeight: 'normal',
+            fontSize: '1.125rem',
+            fontWeight: 'bold',
         },
         subtitle1: {
-            fontSize: '0.8125rem',
+            fontSize: '1.15rem',
             fontWeight: 'bold',
         },
         subtitle2: {
-            fontSize: '0.8125rem',
+            fontSize: '1.05rem',
             fontWeight: 'normal',
         },
         body1: {
-            fontSize: '0.625rem',
+            fontSize: '1rem',
             fontWeight: 'bold',
         },
         body2: {
-            fontSize: '0.625rem',
+            fontSize: '1rem',
             fontWeight: 'normal',
         },
         button: {
