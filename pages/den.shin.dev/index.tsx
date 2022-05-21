@@ -7,7 +7,7 @@ import Link from '@mui/material/Link';
 
 import DefaultLayout from 'layout/DefaultLayout';
 import Image from 'next/image';
-import DefaultHead from '../../component/DefaultHead';
+import DefaultHead from 'component/DefaultHead';
 
 const DenShinDev: NextPage = () => {
     return (
