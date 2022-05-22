@@ -27,6 +27,7 @@ const Post: NextPage<Props> = ({ post }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+    console.log(params?.post);
     // @ts-ignore
     const post = (await import(`/posts/${params?.post}`))[params?.post];
 
