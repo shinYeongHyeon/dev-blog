@@ -1,1 +1,1 @@
-export const postPaths = ['abcd', 'ef'];
+export const postPaths = ['databaseNull'];
