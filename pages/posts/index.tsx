@@ -8,12 +8,15 @@ import DefaultLayout from 'layout/DefaultLayout';
 import { abcd } from 'posts/abcd';
 
 const Posts: NextPage = () => {
+    console.log('nextpage');
     return (
         <DefaultLayout>
             <DefaultHead title={'Den`s POSTS'} />
             <Typography variant={'h1'}>POSTS</Typography>
-            {/* eslint-disable-next-line react/no-children-prop */}
-            <ReactMarkdown children={abcd.b} remarkPlugins={[remarkGfm]} />
+            <ReactMarkdown
+                children={abcd.contents}
+                remarkPlugins={[remarkGfm]}
+            />
         </DefaultLayout>
     );
 };
