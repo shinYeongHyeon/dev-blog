@@ -1,13 +1,13 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import map from 'lodash/map';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import map from 'lodash/map';
 import { Typography } from '@mui/material';
 
-import DefaultHead from 'component/DefaultHead';
 import DefaultLayout from 'layout/DefaultLayout';
+import DefaultHead from 'component/DefaultHead';
 import { IPost } from 'posts/IPost';
-import { postPaths } from 'posts/PostPaths';
+import { allPosts } from 'posts/AllPosts';
 
 interface Props {
     post: IPost;
@@ -27,7 +27,6 @@ const Post: NextPage<Props> = ({ post }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-    console.log(params?.post);
     // @ts-ignore
     const post = (await import(`/posts/${params?.post}`))[params?.post];
 
@@ -38,15 +37,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    return {
-        paths: map(postPaths, (postPath) => ({
+export const getStaticPaths: GetStaticPaths = async () => ({
+    paths: map(
+        map(allPosts, ({ path }) => path),
+        (postPath) => ({
             params: {
                 post: postPath,
             },
-        })),
-        fallback: false,
-    };
-};
+        }),
+    ),
+    fallback: false,
+});
 
 export default Post;
