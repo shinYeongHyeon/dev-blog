@@ -17,8 +17,8 @@ import FullLayout from 'layout/FullLayout';
 import DefaultHead from 'component/DefaultHead';
 import PostList from 'component/PostList';
 import HashtagList from 'component/HashtagList';
+import SeriesList from 'component/SeriesList';
 import { allPosts } from 'posts/AllPosts';
-import SeriesList from '../../component/SeriesList';
 
 const usePosts = (
     searchTag?: string | undefined,
