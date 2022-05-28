@@ -33,5 +33,5 @@ Object.keys(indexable).forEach((k) => console.log(indexable[k])); // 1, 2, 3
 그렇기 때문에 typescript 에서 동적으로 key 를 받아내려면 위와 같이 사용해야 한다.`,
     listContents: `typescript 사용하면서 가변적인 key 가 필요할 경우가 있다.`,
     datetime: '2021년 01월 30일 14시 40분',
-    tags: ['TYPESCRIPT'],
+    tags: ['Typescript'],
 };
