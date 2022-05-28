@@ -14,7 +14,7 @@ import Link from '@mui/material/Link';
 
 import DefaultLayout from 'layout/DefaultLayout';
 import FullLayout from 'layout/FullLayout';
-import DefaultHead from 'component/DefaultHead';
+import HeadTitle from 'component/HeadTitle';
 import PostList from 'component/PostList';
 import HashtagList from 'component/HashtagList';
 import SeriesList from 'component/SeriesList';
@@ -77,7 +77,7 @@ const Posts: NextPage = () => {
 
     return (
         <FullLayout>
-            <DefaultHead title={'Den`s POSTS'} />
+            <HeadTitle title={'Den`s POSTS'} />
             <DefaultLayout>
                 <Typography variant={'h1'}>POSTS</Typography>
             </DefaultLayout>
