@@ -68,7 +68,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const post = (await import(`/posts/${params?.post}`))[params?.post];
     const series = filter(
         allPosts,
-        ({ seriesId }) => seriesId === post.seriesId,
+        ({ seriesId }) => seriesId && seriesId === post.seriesId,
     );
 
     return {
