@@ -1,6 +1,12 @@
 import { IPost } from './IPost';
-import { whyGo } from './whyGo';
+import { Indexable } from './Indexable';
 import { goSettingsAndVars } from './goSettingsAndVars';
+import { whyGo } from './whyGo';
 import { databaseNull } from './databaseNull';
 
-export const allPosts: IPost[] = [goSettingsAndVars, whyGo, databaseNull];
+export const allPosts: IPost[] = [
+    Indexable,
+    goSettingsAndVars,
+    whyGo,
+    databaseNull,
+];
