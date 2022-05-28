@@ -6,12 +6,12 @@ import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 
 import DefaultLayout from 'layout/DefaultLayout';
-import DefaultHead from 'component/DefaultHead';
+import HeadTitle from 'component/HeadTitle';
 
 const Contact: NextPage = () => {
     return (
         <DefaultLayout>
-            <DefaultHead title={'Den`s CONTACT'} />
+            <HeadTitle title={'Den`s CONTACT'} />
             <Typography variant={'h1'}>CONTACT</Typography>
             <Box mt={2}>
                 <Typography variant={'subtitle1'}>

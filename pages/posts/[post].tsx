@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 
 import DefaultLayout from 'layout/DefaultLayout';
 import FullLayout from 'layout/FullLayout';
-import DefaultHead from 'component/DefaultHead';
+import HeadTitle from 'component/HeadTitle';
 import SeriesItem from 'component/SeriesItem';
 import { IPost } from 'posts/IPost';
 import { allPosts } from 'posts/AllPosts';
@@ -24,7 +24,7 @@ interface Props {
 const Post: NextPage<Props> = ({ post, series }) => {
     return (
         <FullLayout>
-            <DefaultHead title={'Den`s POSTS'} />
+            <HeadTitle title={'Den`s POSTS'} />
             <DefaultLayout>
                 <Box display={'flex'} justifyContent={'center'} py={1}>
                     <Typography variant={'h1'}>{post.title}</Typography>

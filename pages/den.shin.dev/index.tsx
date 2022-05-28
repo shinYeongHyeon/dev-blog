@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -6,13 +7,12 @@ import Divider from '@mui/material/Divider';
 import Link from '@mui/material/Link';
 
 import DefaultLayout from 'layout/DefaultLayout';
-import Image from 'next/image';
-import DefaultHead from 'component/DefaultHead';
+import HeadTitle from 'component/HeadTitle';
 
 const DenShinDev: NextPage = () => {
     return (
         <DefaultLayout>
-            <DefaultHead />
+            <HeadTitle />
             <Grid container spacing={1}>
                 <Grid item xs={2}>
                     <Image
