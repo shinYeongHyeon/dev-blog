@@ -11,6 +11,11 @@ export default class MyDocument extends Document {
                         charSet="utf-8"
                     />
                     <link rel="icon" href="/favicon.ico" />
+                    <script
+                        async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7058561196110489"
+                        crossOrigin="anonymous"
+                    ></script>
                     <body>
                         <Main />
                         <NextScript />
