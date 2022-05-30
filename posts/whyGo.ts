@@ -1,4 +1,6 @@
 import { IPost } from './IPost';
+import { GOLANG_TOUR } from './presentationals/Series';
+import { GOLANG } from './presentationals/Tags';
 
 export const whyGo: IPost = {
     title: 'Why GOLANG ?',
@@ -32,6 +34,6 @@ Go 에 대해서 여러 아티클이나 영상을 접하다 보니 가장 큰 �
     listContents: `갑자기 Go 언어를 배워보고자 하는 욕구가 뿜뿜하였다. \n
 Go 에 대해서 여러 아티클이나 영상을 접하다 보니 가장 큰 장점을 속도가 겁나 빠르다 인데, 이 매력에 이끌리게 되어서, 좀 더 찾아보고 내가 배워야 할 이유가 충분하더라.`,
     datetime: '2021년 01월 30일 13시 25분',
-    tags: ['Golang'],
-    seriesId: 'GOLANG_알아보기',
+    tags: [GOLANG],
+    seriesId: GOLANG_TOUR,
 };

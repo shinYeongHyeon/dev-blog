@@ -1,4 +1,5 @@
 import { IPost } from './IPost';
+import { NESTJS } from './presentationals/Tags';
 
 export const ValidationPipe: IPost = {
     title: 'ValidationPipe',
@@ -38,5 +39,5 @@ ValidationPipe 에서 주로 사용하는 옵션은 위와 같은데 하나 씩 
 사랑해`,
     listContents: `NestJS 를 사용하면서 검증을 쉽게 해주는 validationPipe 에 대해 알아보자.`,
     datetime: '2021년 01월 30일 15시 01분',
-    tags: ['NestJS'],
+    tags: [NESTJS],
 };

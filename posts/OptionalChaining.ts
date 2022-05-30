@@ -1,4 +1,5 @@
 import { IPost } from './IPost';
+import { JAVASCRIPT } from './presentationals/Tags';
 
 export const OptionalChaining: IPost = {
     title: 'Optional Chaining',
@@ -34,5 +35,5 @@ test 의 depth1 의 depth2 의 depth3 에 접근하려면, 일단 test 있는지
 [MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Optional_chaining)`,
     listContents: 'ES2020의 Optional Chaining 에 대해서 알아보자.',
     datetime: '2021년 01월 30일 20시 12분',
-    tags: ['Javascript'],
+    tags: [JAVASCRIPT],
 };

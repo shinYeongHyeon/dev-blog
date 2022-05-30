@@ -1,4 +1,6 @@
 import { IPost } from './IPost';
+import { SVELTE_TOUR } from './presentationals/Series';
+import { SVELTE, TRANSLATION } from './presentationals/Tags';
 
 export const LessCode: IPost = {
     title: '(번역/의역) 더 적은 코드로',
@@ -201,6 +203,6 @@ function increment() {
 어떻게 그러냐구요? 다른 제약 조건을 선택하기 때문이죠. Svelte 는 컴파일러이기 때문에, Javscript의 특성에 얽매이지 않습니다. 언어의 의미에 중점을 두기 보다는 컴포넌트 저작 경험을 디자인 할 수 있습니다. 역설적이게도 이는 예를 들어, 프록시나 Hook을 통하지 않고 자연스럽게 변수를 사용하는 것과 같은 관용적 코드를 생성하는 동시에 훨씬 더 성능이 뛰어난 앱을 제공하죠.`,
     listContents: `Svelte 공식문석 번역 : Write less Code`,
     datetime: '2021년 01월 30일 22시 16분',
-    tags: ['Svelte', 'Translation'],
-    seriesId: 'SVELTE_공식문서_돌아보기',
+    tags: [SVELTE, TRANSLATION],
+    seriesId: SVELTE_TOUR,
 };

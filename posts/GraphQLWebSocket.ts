@@ -1,4 +1,5 @@
 import { IPost } from './IPost';
+import { GRAPHQL, NESTJS } from './presentationals/Tags';
 
 export const GraphQLWebSocket: IPost = {
     title: 'Websocket, GraphQL - PubSub',
@@ -53,5 +54,5 @@ export class ExampleResolver {
 그 뒤에 사용처에서 **Inject Decorator** 를 활용해서 import 해주고, 사용하면 끝!`,
     listContents: `NestJS 에서 GraphQL을 그리고 Websocket으로 사용해보자`,
     datetime: '2021년 01월 31일 01시 08분',
-    tags: ['NestJS', 'GraphQL'],
+    tags: [NESTJS, GRAPHQL],
 };
