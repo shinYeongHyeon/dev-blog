@@ -1,4 +1,5 @@
 import { IPost } from './IPost';
+import { GraphQLWebSocket } from './GraphQLWebSocket';
 import { LessCode } from './LessCode';
 import { OptionalChaining } from './OptionalChaining';
 import { SimpleParseInt } from './SimpleParseInt';
@@ -9,6 +10,7 @@ import { whyGo } from './whyGo';
 import { databaseNull } from './databaseNull';
 
 export const allPosts: IPost[] = [
+    GraphQLWebSocket,
     LessCode,
     OptionalChaining,
     SimpleParseInt,
