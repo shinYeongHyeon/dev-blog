@@ -1,4 +1,6 @@
 import { IPost } from './IPost';
+import { GOLANG_TOUR } from './presentationals/Series';
+import { GOLANG } from './presentationals/Tags';
 
 export const goSettingsAndVars: IPost = {
     title: 'Golang Settings & Vars',
@@ -46,6 +48,6 @@ age = 31 // to be ERROR !
     listContents: `Go 를 세팅하는 법과 변수/상수에 대해 알아보자
 Go 는 타입을 강력하게 정의하기 때문에, typescript를 좋아하는 나에게는 너무 좋다.`,
     datetime: '2021년 01월 30일 13시 52분',
-    tags: ['Golang'],
-    seriesId: 'GOLANG_알아보기',
+    tags: [GOLANG],
+    seriesId: GOLANG_TOUR,
 };

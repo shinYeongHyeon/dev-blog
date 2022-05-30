@@ -1,4 +1,5 @@
 import { IPost } from './IPost';
+import { JAVASCRIPT } from './presentationals/Tags';
 
 export const SimpleParseInt: IPost = {
     title: 'ParseInt 의 약어',
@@ -20,5 +21,5 @@ parseInt('1') 은 +'1' 과 동일하다는 것이다.
 [결과 값](https://stackoverflow.com/questions/17106681/parseint-vs-unary-plus-when-to-use-which/17106702#17106702)`,
     listContents: `+'1' === parseInt('1')`,
     datetime: '2021년 01월 30일 20시 05분',
-    tags: ['Javascript'],
+    tags: [JAVASCRIPT],
 };

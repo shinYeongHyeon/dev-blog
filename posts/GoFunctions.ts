@@ -1,4 +1,6 @@
 import { IPost } from './IPost';
+import { GOLANG_TOUR } from './presentationals/Series';
+import { GOLANG } from './presentationals/Tags';
 
 export const GoFunctions: IPost = {
     title: 'Functions',
@@ -100,6 +102,6 @@ func main() {
     listContents: `Go 에서는 꽤 유용한 기능들이 많고 Go 만의 특이점도 많다.
 아래에서 천천히 살펴보자.`,
     datetime: '2021년 01월 31일 01시 24분',
-    tags: ['Golang'],
-    seriesId: 'GOLANG_알아보기',
+    tags: [GOLANG],
+    seriesId: GOLANG_TOUR,
 };
