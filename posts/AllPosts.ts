@@ -1,5 +1,6 @@
-import { GoArray } from './GoArray';
 import { IPost } from './IPost';
+import { GoMap } from './GoMap';
+import { GoArray } from './GoArray';
 import { GoConditions } from './GoConditions';
 import { GoDefer } from './GoDefer';
 import { GoFunctions } from './GoFunctions';
@@ -14,6 +15,7 @@ import { whyGo } from './whyGo';
 import { databaseNull } from './databaseNull';
 
 export const allPosts: IPost[] = [
+    GoMap,
     GoArray,
     GoConditions,
     GoDefer,
