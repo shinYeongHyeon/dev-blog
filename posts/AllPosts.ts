@@ -1,4 +1,6 @@
 import { IPost } from './IPost';
+import { GoChannel } from './GoChannel';
+import { GoPointer } from './GoPointer';
 import { GoMap } from './GoMap';
 import { GoArray } from './GoArray';
 import { GoConditions } from './GoConditions';
@@ -15,6 +17,8 @@ import { whyGo } from './whyGo';
 import { databaseNull } from './databaseNull';
 
 export const allPosts: IPost[] = [
+    GoChannel,
+    GoPointer,
     GoMap,
     GoArray,
     GoConditions,
