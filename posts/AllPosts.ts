@@ -1,4 +1,5 @@
 import { IPost } from './IPost';
+import { ReactLifeCycle } from './ReactLifeCycle';
 import { GoChannel } from './GoChannel';
 import { GoPointer } from './GoPointer';
 import { GoMap } from './GoMap';
@@ -17,6 +18,7 @@ import { whyGo } from './whyGo';
 import { databaseNull } from './databaseNull';
 
 export const allPosts: IPost[] = [
+    ReactLifeCycle,
     GoChannel,
     GoPointer,
     GoMap,

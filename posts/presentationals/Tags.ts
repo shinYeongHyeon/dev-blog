@@ -6,3 +6,4 @@ export const SVELTE = 'Svelte';
 export const TRANSLATION = 'Translation';
 export const GRAPHQL = 'GraphQL';
 export const DATABASE = 'Database';
+export const REACT = 'ReactJS';
