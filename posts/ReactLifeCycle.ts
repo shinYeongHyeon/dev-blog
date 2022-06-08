@@ -17,7 +17,7 @@ ReactJS 의 개념? 이라고 이해했다.
 
 (unmount 는 제외하고.)
 
-이를 함수로 자세히보자면 마운트되면서 **constructor()** 가 **render()** 되기전에 실행되며, **render()** 되고 나면 **componentDidMount()**가 실행된다. 글자 그대로 **마운트 되고 나서~** 이다.
+이를 함수로 자세히보자면 마운트되면서 **constructor()** 가 **render()** 되기전에 실행되며, **render()** 되고 나면 **componentDidMount()** 가 실행된다. 글자 그대로 **마운트 되고 나서~** 이다.
 
 가장 기초적인 것들을 알아보았고,  
 이번에는 **Updating**과 **State** 에 대해 알아보도록 하자.  

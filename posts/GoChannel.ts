@@ -9,8 +9,6 @@ export const GoChannel: IPost = {
 **Channel** 은 데이터를 주고 받는 통로라고 볼 수 있다.  
 make 를 통해 선언을 한다
 
-type job struct { title string salary int } func main() { c := make(chan job) }
-
 \`\`\`
 type job struct {
   title string
