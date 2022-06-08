@@ -15,6 +15,8 @@ import HeadTitle from 'component/HeadTitle';
 import SeriesItem from 'component/SeriesItem';
 import { IPost } from 'posts/IPost';
 import { allPosts } from 'posts/AllPosts';
+import MarkdownCode from '../../component/markdown/MarkdownCode';
+import { darkTheme } from '../../styles/theme';
 
 interface Props {
     post: IPost;
@@ -36,6 +38,27 @@ const Post: NextPage<Props> = ({ post, series }) => {
                     <ReactMarkdown
                         children={post.contents}
                         remarkPlugins={[remarkGfm]}
+                        components={{
+                            code({ node, children, ...props }) {
+                                return (
+                                    <MarkdownCode>
+                                        <code {...props}>{children}</code>
+                                    </MarkdownCode>
+                                );
+                            },
+                            a({ children, ...props }) {
+                                return (
+                                    <a
+                                        {...props}
+                                        style={{
+                                            color: darkTheme.palette.info.main,
+                                        }}
+                                    >
+                                        {children}
+                                    </a>
+                                );
+                            },
+                        }}
                     />
                 </Grid>
                 {series && (
