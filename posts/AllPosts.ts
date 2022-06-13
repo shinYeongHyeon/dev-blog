@@ -14,10 +14,12 @@ import { SimpleParseInt } from './SimpleParseInt';
 import { ValidationPipe } from './ValidationPipe';
 import { Indexable } from './Indexable';
 import { goSettingsAndVars } from './goSettingsAndVars';
+import { VirtualDomIsOverhead } from './VirtualDomIsOverhead';
 import { whyGo } from './whyGo';
 import { databaseNull } from './databaseNull';
 
 export const allPosts: IPost[] = [
+    VirtualDomIsOverhead,
     ReactLifeCycle,
     GoChannel,
     GoPointer,
