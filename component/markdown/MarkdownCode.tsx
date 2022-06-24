@@ -13,6 +13,7 @@ const MarkdownCode: React.FC<Props> = ({ children }) => {
         <Grid container>
             <Grid item pl={2} xs={12}>
                 <Box
+                    sx={{ whiteSpace: 'normal' }}
                     p={1}
                     bgcolor={darkTheme.palette.grey['700']}
                     fontSize={darkTheme.typography.body2.fontSize}
