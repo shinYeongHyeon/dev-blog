@@ -1,3 +1,5 @@
+import React from 'react';
+import map from 'lodash/map';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import Grid from '@mui/material/Grid';
@@ -8,8 +10,38 @@ import Link from '@mui/material/Link';
 
 import DefaultLayout from 'layout/DefaultLayout';
 import HeadTitle from 'component/HeadTitle';
+import PostList from 'component/PostList';
+import { allPosts } from 'posts/AllPosts';
+
+const RECENT_STANDARD = 10;
+
+const useDenShinDev = () => {
+    const latestPostComponents = map(
+        allPosts.slice(0, RECENT_STANDARD),
+        ({ path, title, listContents, datetime, tags }) => (
+            <Box my={2} key={`box-${path}`}>
+                <PostList
+                    key={path}
+                    title={title}
+                    contents={listContents}
+                    path={path}
+                    datetime={datetime}
+                    tags={tags}
+                />
+            </Box>
+        ),
+    );
+
+    return {
+        models: {
+            latestPostComponents,
+        },
+    };
+}
 
 const DenShinDev: NextPage = () => {
+    const { models } = useDenShinDev();
+
     return (
         <DefaultLayout>
             <HeadTitle />
@@ -44,6 +76,17 @@ const DenShinDev: NextPage = () => {
                         조금이라도 도움이 되는 글이 있다면 좋겠네요. <br />
                         그럼, 살펴가세요 :)
                     </Typography>
+                </Grid>
+            </Grid>
+            <Grid container
+                  spacing={1}
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+            >
+                <Typography variant={'h2'}>Recent {RECENT_STANDARD} Post</Typography>
+                <Grid item xs={12}>
+                    {models.latestPostComponents}
                 </Grid>
             </Grid>
         </DefaultLayout>
