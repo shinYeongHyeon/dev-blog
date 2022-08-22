@@ -16,9 +16,11 @@ import { Indexable } from './Indexable';
 import { goSettingsAndVars } from './goSettingsAndVars';
 import { VirtualDomIsOverhead } from './VirtualDomIsOverhead';
 import { whyGo } from './whyGo';
+import { TrulyReactive } from "./TrulyReactive";
 import { databaseNull } from './databaseNull';
 
 export const allPosts: IPost[] = [
+    TrulyReactive,
     VirtualDomIsOverhead,
     ReactLifeCycle,
     GoChannel,
