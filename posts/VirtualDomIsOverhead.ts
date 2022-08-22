@@ -60,8 +60,8 @@ function HelloMessage(props) {
 ## **How did the mem start? (이 밈은 어떻게 시작됐는지?)**
 
 > Misunderstood claims about virtual DOM performance date back to the launch of React. In [Rethinking Best Practices](https://www.youtube.com/watch?v=x7cQ3mrcKaY), a seminal 2013 talk by former React core team member Pete Hunt, we learned the following:  
->     _This is actually extremely fast, primarily because most DOM operations tend to be slow.  
->     There's been a lot of performance work on the DOM, but most DOM operations tend to drop frames._  
+> This is actually extremely fast, primarily because most DOM operations tend to be slow.  
+> There's been a lot of performance work on the DOM, but most DOM operations tend to drop frames.  
 
 가상 DOM 성능에 대한 오해는 React 출시로 거슬러 올라갑니다. Rethinking Best Practices의 전 React 핵심 팀원 Pete Hunt의 2013 년 대담에서 우리는 알았죠.
 
