@@ -39,14 +39,14 @@ const Post: NextPage<Props> = ({ post, series }) => {
                         children={post.contents}
                         remarkPlugins={[remarkGfm]}
                         components={{
-                            code({ node, children, ...props }) {
+                            code: ({ node, children, ...props }) => {
                                 return (
                                     <MarkdownCode>
                                         <code {...props}>{children}</code>
                                     </MarkdownCode>
                                 );
                             },
-                            a({ children, ...props }) {
+                            a: ({ children, ...props }) => {
                                 return (
                                     <a
                                         {...props}
