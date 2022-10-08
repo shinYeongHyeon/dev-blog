@@ -18,8 +18,10 @@ import { VirtualDomIsOverhead } from './VirtualDomIsOverhead';
 import { whyGo } from './whyGo';
 import { TrulyReactive } from "./TrulyReactive";
 import { databaseNull } from './databaseNull';
+import { SvelteNestedComponents } from './SvelteNestedComponents';
 
 export const allPosts: IPost[] = [
+    SvelteNestedComponents,
     TrulyReactive,
     VirtualDomIsOverhead,
     ReactLifeCycle,
