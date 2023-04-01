@@ -18,6 +18,7 @@ const MarkdownCode: React.FC<Props> = ({ children }) => {
                     fontSize={darkTheme.typography.body2.fontSize}
                     fontWeight={darkTheme.typography.body2.fontWeight}
                     whiteSpace={'pre-wrap'}
+                    sx={{ borderRadius: 2 }}
                 >
                     {children}
                 </Box>

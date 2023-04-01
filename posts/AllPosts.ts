@@ -19,8 +19,10 @@ import { whyGo } from './whyGo';
 import { TrulyReactive } from "./TrulyReactive";
 import { databaseNull } from './databaseNull';
 import { SvelteNestedComponents } from './SvelteNestedComponents';
+import {RepositoryLanguage} from "./RepositoryLanguage";
 
 export const allPosts: IPost[] = [
+    RepositoryLanguage,
     SvelteNestedComponents,
     TrulyReactive,
     VirtualDomIsOverhead,
