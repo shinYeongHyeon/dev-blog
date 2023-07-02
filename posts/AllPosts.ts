@@ -21,8 +21,14 @@ import { databaseNull } from './databaseNull';
 import { SvelteNestedComponents } from './SvelteNestedComponents';
 import { RepositoryLanguage } from "./RepositoryLanguage";
 import { SvelteStatement } from "./SvelteStatement";
+import { SvelteKeyedEachBlocks } from "./SvelteKeyedEachBlocks";
+import { SvelteEvent } from "./SvelteEvent";
+import { GolangDeploy } from "./GolangDeploy";
 
 export const allPosts: IPost[] = [
+    GolangDeploy,
+    SvelteEvent,
+    SvelteKeyedEachBlocks,
     SvelteStatement,
     RepositoryLanguage,
     SvelteNestedComponents,
