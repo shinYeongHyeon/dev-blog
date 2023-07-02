@@ -19,9 +19,11 @@ import { whyGo } from './whyGo';
 import { TrulyReactive } from "./TrulyReactive";
 import { databaseNull } from './databaseNull';
 import { SvelteNestedComponents } from './SvelteNestedComponents';
-import {RepositoryLanguage} from "./RepositoryLanguage";
+import { RepositoryLanguage } from "./RepositoryLanguage";
+import { SvelteStatement } from "./SvelteStatement";
 
 export const allPosts: IPost[] = [
+    SvelteStatement,
     RepositoryLanguage,
     SvelteNestedComponents,
     TrulyReactive,
