@@ -10,3 +10,5 @@ export const POSTGRE = 'PostgreSQL';
 export const REACT = 'ReactJS';
 export const GIT = 'GIT';
 export const ETC = 'Etc';
+export const DOCKER = 'Docker';
+export const TERRAFORM = 'Terraform';
