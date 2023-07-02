@@ -6,7 +6,7 @@ export const SVELTE = 'Svelte';
 export const TRANSLATION = 'Translation';
 export const GRAPHQL = 'GraphQL';
 export const DATABASE = 'Database';
+export const POSTGRE = 'PostgreSQL';
 export const REACT = 'ReactJS';
 export const GIT = 'GIT';
-
 export const ETC = 'Etc';

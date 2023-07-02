@@ -27,8 +27,16 @@ import { GolangDeploy } from "./GolangDeploy";
 import { GitInvalidActiveDeveloper } from "./GitInvalidActiveDeveloper";
 import { GoCodeCompile } from "./GoCodeCompile";
 import { Cron } from "./Cron";
+import { NestJSTaskScheduling } from "./NestJSTaskScheduling";
+import { GoBuild } from "./GoBuild";
+import { PostgreSQLOldPostmasterError } from "./PostgreSQLOldPostmasterError";
+import { PostgreSQLDuplicateKey } from "./PostgreSQLDuplicateKey";
 
 export const allPosts: IPost[] = [
+    PostgreSQLDuplicateKey,
+    PostgreSQLOldPostmasterError,
+    GoBuild,
+    NestJSTaskScheduling,
     Cron,
     GoCodeCompile,
     GitInvalidActiveDeveloper,
