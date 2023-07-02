@@ -13,7 +13,7 @@ import DefaultLayout from 'layout/DefaultLayout';
 import FullLayout from 'layout/FullLayout';
 import HeadTitle from 'component/HeadTitle';
 import SeriesItem from 'component/SeriesItem';
-import { IPost } from 'posts/IPost';
+import { IPost } from 'posts/interfaces/IPost';
 import { allPosts } from 'posts/AllPosts';
 import MarkdownCode from '../../component/markdown/MarkdownCode';
 import { darkTheme } from '../../styles/theme';
@@ -58,6 +58,16 @@ const Post: NextPage<Props> = ({ post, series }) => {
                                     </a>
                                 );
                             },
+                            strong: ({ children, ...props }) => {
+                                return (
+                                    <b
+                                        {...props}
+                                        style={{
+                                            fontSize: '137%'
+                                        }}
+                                    >{children}</b>
+                                );
+                            }
                         }}
                     />
                 </Grid>

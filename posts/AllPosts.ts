@@ -1,4 +1,4 @@
-import { IPost } from './IPost';
+import { IPost } from './interfaces/IPost';
 import { ReactLifeCycle } from './ReactLifeCycle';
 import { GoChannel } from './GoChannel';
 import { GoPointer } from './GoPointer';
@@ -24,8 +24,14 @@ import { SvelteStatement } from "./SvelteStatement";
 import { SvelteKeyedEachBlocks } from "./SvelteKeyedEachBlocks";
 import { SvelteEvent } from "./SvelteEvent";
 import { GolangDeploy } from "./GolangDeploy";
+import { GitInvalidActiveDeveloper } from "./GitInvalidActiveDeveloper";
+import { GoCodeCompile } from "./GoCodeCompile";
+import { Cron } from "./Cron";
 
 export const allPosts: IPost[] = [
+    Cron,
+    GoCodeCompile,
+    GitInvalidActiveDeveloper,
     GolangDeploy,
     SvelteEvent,
     SvelteKeyedEachBlocks,

@@ -1,4 +1,4 @@
-import { IPost } from './IPost';
+import { IPost } from './interfaces/IPost';
 import { SVELTE_TOUR } from './presentationals/Series';
 import { SVELTE } from './presentationals/Tags';
 

@@ -1,4 +1,4 @@
-import { IPost } from './IPost';
+import { IPost } from './interfaces/IPost';
 import { TYPESCRIPT } from './presentationals/Tags';
 
 export const Indexable: IPost = {
