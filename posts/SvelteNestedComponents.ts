@@ -1,6 +1,6 @@
 import { IPost } from './IPost';
 import { SVELTE_TOUR } from './presentationals/Series';
-import { SVELTE, TRANSLATION } from './presentationals/Tags';
+import { SVELTE } from './presentationals/Tags';
 
 export const SvelteNestedComponents: IPost = {
     title: 'Nested Components',
