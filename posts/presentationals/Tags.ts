@@ -8,3 +8,5 @@ export const GRAPHQL = 'GraphQL';
 export const DATABASE = 'Database';
 export const REACT = 'ReactJS';
 export const GIT = 'GIT';
+
+export const ETC = 'Etc';

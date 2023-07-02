@@ -1,4 +1,4 @@
-import { IPost } from './IPost';
+import { IPost } from './interfaces/IPost';
 import { GOLANG_TOUR } from './presentationals/Series';
 import { GOLANG } from './presentationals/Tags';
 

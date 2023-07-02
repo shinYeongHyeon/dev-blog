@@ -1,4 +1,4 @@
-import { IPost } from './IPost';
+import { IPost } from './interfaces/IPost';
 import { GRAPHQL, NESTJS } from './presentationals/Tags';
 
 export const GraphQLWebSocket: IPost = {
