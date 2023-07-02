@@ -35,8 +35,6 @@ $ rm -f postmaster.pid
 
 위 명령어를 입력 후 다시 서버를 시작해주면 정상적으로 시작이 된다 !
 
-[##_Image|kage@dt8JW1/btqXKuc7m07/KesLWoj55IxqpPVARiTdJ1/img.png|CDM|1.3|{"originWidth":1182,"originHeight":338,"style":"alignCenter","mobileStyle":"widthContent","filename":"스크린샷 2021-02-18 오후 10.51.20.png"}_##]
-
 [참고 아티클](https://medium.com/@rimsovankiry/the-data-directory-contains-an-unreadable-postmaster-pid-file-on-postgresql-12-mac-os-54775a641160)`,
     listContents: '오래된 postmaster.pid 가 이미 실행중이다, 죽여달라...는 에러에 대해서 알아보자',
     datetime: '2021년 02월 18일 23시 01분',
