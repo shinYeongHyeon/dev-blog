@@ -1,5 +1,5 @@
 import { IPost } from './interfaces/IPost';
-import { DATABASE, ETC } from './presentationals/Tags';
+import { ETC } from './presentationals/Tags';
 
 export const Cron: IPost = {
     title: 'Cron 표현식',
