@@ -70,8 +70,10 @@ import { GoLangSingleton } from "./GoLangSingleton";
 import { SvelteInit } from "./SvelteInit";
 import { SvelteCustomComponent } from "./SvelteCustomComponent";
 import { GitHookError } from "./GitHookError";
+import {TypescriptEsModuleInterop} from "./TypescriptEsModuleInterop";
 
 export const allPosts: IPost[] = [
+    TypescriptEsModuleInterop,
     GitHookError,
     SvelteCustomComponent,
     SvelteInit,
