@@ -103,11 +103,11 @@ const DenShinDev: NextPage = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography>2023.07 (예정)&nbsp;&nbsp;&nbsp;&nbsp;<Link href={'https://www.bbodek.com'} underline={'none'}>뽀득</Link></Typography>
+                            <Typography>2023.07 ~&nbsp;&nbsp;&nbsp;&nbsp;<Link href={'https://www.bbodek.com'} underline={'none'}>뽀득</Link></Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                7월 17일 입사 예정
+                                - 2023.7 : 시스템개발팀 개발파트리드 <br />
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
