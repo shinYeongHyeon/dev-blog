@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import BookIcon from '@mui/icons-material/Book';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
@@ -29,6 +30,14 @@ const Contact: NextPage = () => {
                             underline={'none'}
                         >
                             <ContactMailIcon /> den.shin.dev@gmail.com
+                        </Link>
+                    </Box>
+                    <Box>
+                        <Link
+                            href={'https://brunch.co.kr/@7dd32b1c9b814e9'}
+                            underline={'none'}
+                        >
+                            <BookIcon /> https://brunch.co.kr/@7dd32b1c9b814e9
                         </Link>
                     </Box>
                 </Typography>
