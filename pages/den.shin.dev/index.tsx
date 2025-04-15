@@ -2,15 +2,7 @@ import React from 'react';
 import map from 'lodash/map';
 import { NextPage } from 'next';
 import Image from 'next/image';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Link from '@mui/material/Link';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Link from 'next/link';
 
 import DefaultLayout from 'layout/DefaultLayout';
 import HeadTitle from 'component/HeadTitle';
@@ -23,7 +15,8 @@ const useDenShinDev = () => {
     const latestPostComponents = map(
         allPosts.slice(0, RECENT_STANDARD),
         ({ path, title, listContents, datetime, tags }) => (
-            <Box my={2} key={`box-${path}`}>
+            <div className="my-4 "
+                 key={`box-${path}`}>
                 <PostList
                     key={path}
                     title={title}
@@ -32,7 +25,7 @@ const useDenShinDev = () => {
                     datetime={datetime}
                     tags={tags}
                 />
-            </Box>
+            </div>
         ),
     );
 
@@ -49,98 +42,100 @@ const DenShinDev: NextPage = () => {
     return (
         <DefaultLayout>
             <HeadTitle />
-            <Grid container spacing={1}>
-                <Grid item xs={2}>
+            <div className="grid grid-cols-12 gap-4">
+                <div className="col-span-2">
                     <Image
                         src={'/den.JPG'}
                         alt={'den.shin.dev'}
                         width={200}
                         height={290}
+                        className="rounded-lg"
                     />
-                </Grid>
-                <Grid item xs={10}>
-                    <Typography variant={'h1'}>Den`s DEV Blog</Typography>
-                    <Typography variant={'subtitle1'} marginBottom={2}>
+                </div>
+                <div className="col-span-10">
+                    <h1 className="text-3xl font-bold mb-4">Den`s DEV Blog</h1>
+                    <p className="text-lg text-gray-300 mb-8">
                         어제 보다 조금이라도 나아지기 위해, 머리가 좋지 않은
                         나는 자잘한 것들이라도 기록하며,,
-                    </Typography>
+                    </p>
 
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                            <Typography>2010.03 ~ 2016.12&nbsp;&nbsp;&nbsp;&nbsp;<Link href={'https://www.cau.ac.kr/index.do'} underline={'none'}>중앙대학교 컴퓨터공학부</Link></Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                - 2011년도 학생회 선전부장
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                            <Typography>2016.06 ~ 2023.07&nbsp;&nbsp;&nbsp;&nbsp;<Link href={'https://teamo2.kr'} underline={'none'}>TeamO2</Link></Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                - 2016.06 ~ 2016.12 : 인턴 및 계약직 <br />
-                                - 2016.12 ~ 2019 : 서비스팀 개발파트 대리  <br />
-                                - 2019 ~ 2021 : 서비스팀 개발파트 파트장  <br />
-                                - 2021 ~ 2022.07 : 개발팀 부팀장  <br />
-                                - 2022.07 ~ 2023.07 : 백엔드개발팀 팀장  <br />
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                            <Typography>2023.07 ~&nbsp;&nbsp;&nbsp;&nbsp;<Link href={'https://www.bbodek.com'} underline={'none'}>뽀득</Link></Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                - 2023.7 : 시스템개발팀 개발파트리드 <br />
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
+                    <div className="space-y-4">
+                        <div className="border border-gray-700 rounded-lg">
+                            <details className="group">
+                                <summary className="flex items-center justify-between p-4 cursor-pointer list-none">
+                                    <span className="text-lg">
+                                        2010.03 ~ 2016.12&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <Link 
+                                            href={'https://www.cau.ac.kr/index.do'}
+                                            className="text-blue-400 hover:text-blue-300"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            중앙대학교 컴퓨터공학부
+                                        </Link>
+                                    </span>
+                                    <span className="transition group-open:rotate-180">
+                                        <svg fill="none" height="24" width="24">
+                                            <path
+                                                d="M6 9l6 6 6-6"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                            />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div className="p-4 pt-0 text-gray-300">
+                                    - 2011년도 학생회 선전부장
+                                </div>
+                            </details>
+                        </div>
 
-                    <br />
-                </Grid>
-            </Grid>
-            <Grid container
-                  spacing={1}
-                  marginY={2}
-                  display="flex"
-                  alignItems="center"
-            >
-                <Typography variant={'body1'}>
-                    백엔드 개발자가 메인이지만, 프론트엔드도 나름 꾸준히 하는 중이고 <br />
-                    어제보다 나은 저를 위해 매일매일 공부하며 기억력이 좋지 못한 저를 위해 블로그를 운영중입니다. <br /> <br />
-                    조금이라도 도움이 되는 글이 있다면 좋겠네요. <br />
-                    그럼, 살펴가세요 :)
-                </Typography>
-            </Grid>
-            <Divider />
-            <Grid container
-                  marginTop={3}
-                  spacing={1}
-                  display="flex"
-                  justifyContent="center"
-                  alignItems="center"
-            >
-                <Typography variant={'h2'}>Recent {RECENT_STANDARD} Post</Typography>
-                <Grid item xs={12}>
+                        <div className="border border-gray-700 rounded-lg">
+                            <details className="group">
+                                <summary className="flex items-center justify-between p-4 cursor-pointer list-none">
+                                    <span className="text-lg">
+                                        2016.06 ~ 2023.07&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <Link 
+                                            href={'https://teamo2.kr'}
+                                            className="text-blue-400 hover:text-blue-300"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            TeamO2
+                                        </Link>
+                                    </span>
+                                    <span className="transition group-open:rotate-180">
+                                        <svg fill="none" height="24" width="24">
+                                            <path
+                                                d="M6 9l6 6 6-6"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                            />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div className="p-4 pt-0 text-gray-300">
+                                    - 2016.06 ~ 2016.12 : 인턴 및 계약직 <br />
+                                    - 2016.12 ~ 2019 : 서비스팀 개발파트 대리  <br />
+                                    - 2019 ~ 2021 : 서비스팀 개발파트 파트장  <br />
+                                    - 2021 ~ 2022.07 : 개발팀 부팀장  <br />
+                                    - 2022.07 ~ 2023.07 : 백엔드개발팀 팀장  <br />
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="mt-8">
+                <h2 className="text-2xl font-bold mb-4">최근 게시물</h2>
+                <div className="space-y-4">
                     {models.latestPostComponents}
-                </Grid>
-            </Grid>
+                </div>
+            </div>
         </DefaultLayout>
     );
 };

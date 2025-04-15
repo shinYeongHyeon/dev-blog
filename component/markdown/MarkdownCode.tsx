@@ -1,8 +1,4 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-
-import { darkTheme } from '../../styles/theme';
 
 interface Props {
     children: React.ReactNode | React.ReactNode[];
@@ -10,20 +6,13 @@ interface Props {
 
 const MarkdownCode: React.FC<Props> = ({ children }) => {
     return (
-        <Grid container>
-            <Grid item pl={2} xs={12}>
-                <Box
-                    p={1}
-                    bgcolor={darkTheme.palette.grey['700']}
-                    fontSize={darkTheme.typography.body2.fontSize}
-                    fontWeight={darkTheme.typography.body2.fontWeight}
-                    whiteSpace={'pre-wrap'}
-                    sx={{ borderRadius: 2 }}
-                >
+        <div className="w-full">
+            <div className="pl-4">
+                <div className="p-2 bg-gray-700 text-sm font-normal whitespace-pre-wrap rounded-lg">
                     {children}
-                </Box>
-            </Grid>
-        </Grid>
+                </div>
+            </div>
+        </div>
     );
 };
 

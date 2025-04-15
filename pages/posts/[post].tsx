@@ -4,10 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import map from 'lodash/map';
 import filter from 'lodash/filter';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 
 import DefaultLayout from 'layout/DefaultLayout';
 import FullLayout from 'layout/FullLayout';
@@ -16,7 +12,6 @@ import SeriesItem from 'component/SeriesItem';
 import { IPost } from 'posts/interfaces/IPost';
 import { allPosts } from 'posts/AllPosts';
 import MarkdownCode from '../../component/markdown/MarkdownCode';
-import { darkTheme } from '../../styles/theme';
 
 interface Props {
     post: IPost;
@@ -28,13 +23,13 @@ const Post: NextPage<Props> = ({ post, series }) => {
         <FullLayout>
             <HeadTitle title={'Den`s POSTS'} />
             <DefaultLayout>
-                <Box display={'flex'} justifyContent={'center'} py={1}>
-                    <Typography variant={'h1'}>{post.title}</Typography>
-                </Box>
+                <div className="flex justify-center py-4">
+                    <h1 className="text-3xl font-bold">{post.title}</h1>
+                </div>
             </DefaultLayout>
-            <Divider />
-            <Grid container spacing={1} my={1}>
-                <Grid item xs={10}>
+            <hr className="border-gray-700 my-4" />
+            <div className="grid grid-cols-12 gap-4 my-4">
+                <div className="col-span-10">
                     <ReactMarkdown
                         children={post.contents}
                         remarkPlugins={[remarkGfm]}
@@ -50,9 +45,7 @@ const Post: NextPage<Props> = ({ post, series }) => {
                                 return (
                                     <a
                                         {...props}
-                                        style={{
-                                            color: darkTheme.palette.info.main,
-                                        }}
+                                        className="text-blue-400 hover:text-blue-300"
                                     >
                                         {children}
                                     </a>
@@ -62,47 +55,44 @@ const Post: NextPage<Props> = ({ post, series }) => {
                                 return (
                                     <b
                                         {...props}
-                                        style={{
-                                            fontSize: '137%'
-                                        }}
+                                        className="text-[137%]"
                                     >{children}</b>
                                 );
                             }
                         }}
                     />
-                </Grid>
+                </div>
                 {series && (
-                    <Grid item xs={2}>
-                        <Box display={'flex'} justifyContent={'center'}>
-                            <Typography variant={'h6'}>
+                    <div className="col-span-2">
+                        <div className="flex justify-center mb-4">
+                            <h2 className="text-xl font-semibold">
                                 {post.seriesId}
-                            </Typography>
-                        </Box>
+                            </h2>
+                        </div>
                         {map(series, ({ path, title }) => {
                             return (
-                                <Box mx={1} key={`box-${path}`}>
+                                <div className="mx-4 mb-2" key={`box-${path}`}>
                                     <SeriesItem
                                         key={path}
                                         path={path}
                                         title={title}
                                     />
-                                </Box>
+                                </div>
                             );
                         })}
-                    </Grid>
+                    </div>
                 )}
-            </Grid>
+            </div>
         </FullLayout>
     );
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     // @ts-ignore
-    const post = (await import(`/posts/${params?.post}`))[params?.post];
-    const series = filter(
-        allPosts,
-        ({ seriesId }) => seriesId && seriesId === post.seriesId,
-    );
+    const post = filter(allPosts, { path: params?.post })[0];
+    const series = post?.seriesId
+        ? filter(allPosts, { seriesId: post.seriesId })
+        : undefined;
 
     return {
         props: {
@@ -113,14 +103,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-    paths: map(
-        map(allPosts, ({ path }) => path),
-        (postPath) => ({
-            params: {
-                post: postPath,
-            },
-        }),
-    ),
+    paths: map(allPosts, (post) => ({
+        params: {
+            post: post.path,
+        },
+    })),
     fallback: false,
 });
 

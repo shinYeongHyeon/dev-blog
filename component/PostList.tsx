@@ -1,9 +1,6 @@
 import React from 'react';
 import map from 'lodash/map';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Link from 'next/link';
 import Hashtag from './Hashtag';
 
 interface Props {
@@ -23,26 +20,27 @@ const PostList: React.FC<Props> = ({
     tags,
 }) => {
     return (
-        <Box>
-            <Grid container>
-                <Grid item>
-                    <Link href={`/posts/${path}`} underline={'none'}>
-                        <Typography variant={'h5'}>{title}</Typography>
-                    </Link>
-                </Grid>
-                <Grid item ml={2}>
-                    <Typography variant={'body2'}>
-                        <small>{datetime}</small>
-                    </Typography>
-                </Grid>
-            </Grid>
-            <Box sx={{ whiteSpace: 'normal' }}>{contents}</Box>
-            <Grid container justifyContent="flex-end">
+        <div className="mb-8">
+            <div className="flex items-center mb-2">
+                <Link 
+                    href={`/posts/${path}`}
+                    className="text-xl font-semibold text-white hover:text-gray-300"
+                >
+                    {title}
+                </Link>
+                <span className="ml-2 text-sm text-gray-400">
+                    {datetime}
+                </span>
+            </div>
+            <div className="whitespace-normal text-gray-300 mb-4">
+                {contents}
+            </div>
+            <div className="flex justify-end space-x-2">
                 {map(tags, (tag) => (
                     <Hashtag key={tag} tag={tag} />
                 ))}
-            </Grid>
-        </Box>
+            </div>
+        </div>
     );
 };
 

@@ -3,19 +3,12 @@ import React from 'react';
 import { useMemo, useState } from 'react';
 import type { AppProps } from 'next/app';
 import map from 'lodash/map';
-import { CssBaseline } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
-import FeedIcon from '@mui/icons-material/Feed';
-import ContactsIcon from '@mui/icons-material/Contacts';
-import AppBar from '@mui/material/AppBar';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import Link from 'next/link';
 
 import 'styles/global.css';
-import { darkTheme } from 'styles/theme';
 
 interface Menu {
-    icon?: any;
+    icon?: React.ReactNode;
     label: string;
     path: string;
 }
@@ -26,40 +19,25 @@ const menus: Menu[] = [
         path: '/den.shin.dev',
     },
     {
-        icon: <FeedIcon />,
         label: 'POSTS',
         path: '/posts',
     },
     {
-        icon: <ContactsIcon />,
         label: 'CONTACT',
         path: '/contact',
     },
 ];
 
 const useApp = () => {
-    const [tabValue, setTabValue] = useState(0);
-    const tabs = useMemo(
-        () =>
-            map(menus, (menu: Menu) => (
-                <Tab
-                    key={menu.label}
-                    icon={menu?.icon}
-                    label={menu.label}
-                    href={menu.path}
-                    disableRipple={true}
-                />
-            )),
-        [],
-    );
-    const onTabClick = (e: React.SyntheticEvent, v: any) => {
-        setTabValue(v);
+    const [activeTab, setActiveTab] = useState(0);
+
+    const onTabClick = (index: number) => {
+        setActiveTab(index);
     };
 
     return {
         model: {
-            tabValue,
-            tabs,
+            activeTab,
         },
         operations: {
             onTabClick,
@@ -71,15 +49,31 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
     const { model, operations } = useApp();
 
     return (
-        <ThemeProvider theme={darkTheme}>
-            <CssBaseline />
-            <AppBar position="static">
-                <Tabs value={model.tabValue} onChange={operations.onTabClick}>
-                    {model.tabs}
-                </Tabs>
-            </AppBar>
-            <Component {...pageProps} />
-        </ThemeProvider>
+        <div className="min-h-screen bg-gray-900 text-white">
+            <nav className="bg-gray-800 shadow-lg">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex space-x-4">
+                        {menus.map((menu, index) => (
+                            <Link
+                                key={menu.label}
+                                href={menu.path}
+                                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                                    model.activeTab === index
+                                        ? 'bg-gray-900 text-white'
+                                        : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                                }`}
+                                onClick={() => operations.onTabClick(index)}
+                            >
+                                {menu.label}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </nav>
+            <main className="max-w-7xl mx-auto px-4 py-6">
+                <Component {...pageProps} />
+            </main>
+        </div>
     );
 };
 

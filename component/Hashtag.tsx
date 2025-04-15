@@ -1,4 +1,3 @@
-import Box from '@mui/material/Box';
 import React from 'react';
 
 interface Props {
@@ -7,9 +6,9 @@ interface Props {
 
 const Hashtag: React.FC<Props> = ({ tag }) => {
     return (
-        <Box mx={1}>
-            <small>#{tag}</small>
-        </Box>
+        <span className="mx-1 text-sm text-gray-400">
+            #{tag}
+        </span>
     );
 };
 

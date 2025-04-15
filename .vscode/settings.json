@@ -1,0 +1,9 @@
+{
+  "version-lens.showAtCaret": true,
+  "version-lens.packageManager": "yarn",
+  "version-lens.showCurrentVersion": true,
+  "version-lens.showLatestVersion": true,
+  "version-lens.enableTelemetry": false,
+  "version-lens.showUpgradeIndicator": true,
+  "version-lens.showVersionCompatibility": true
+}

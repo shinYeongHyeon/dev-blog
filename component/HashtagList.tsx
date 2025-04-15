@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Link from 'next/link';
 
 interface Props {
     tag: string;
@@ -9,13 +7,14 @@ interface Props {
 
 const HashtagList: React.FC<Props> = ({ tag }) => {
     return (
-        <Box>
-            <Link href={`/posts?tag=${tag}`}>
-                <Typography variant={'h6'}>
-                    <small>#{tag}</small>
-                </Typography>
+        <div>
+            <Link 
+                href={`/posts?tag=${tag}`}
+                className="text-lg font-medium text-white hover:text-gray-300"
+            >
+                <span className="text-sm">#{tag}</span>
             </Link>
-        </Box>
+        </div>
     );
 };
 

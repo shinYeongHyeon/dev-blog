@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Link from 'next/link';
 
 interface Props {
     series: string;
@@ -9,13 +7,14 @@ interface Props {
 
 const SeriesList: React.FC<Props> = ({ series }) => {
     return (
-        <Box>
-            <Link href={`/posts?series=${series}`}>
-                <Typography variant={'h6'}>
-                    <small>{series}</small>
-                </Typography>
+        <div>
+            <Link 
+                href={`/posts?series=${series}`}
+                className="text-lg font-medium text-white hover:text-gray-300"
+            >
+                <span className="text-sm">{series}</span>
             </Link>
-        </Box>
+        </div>
     );
 };
 
