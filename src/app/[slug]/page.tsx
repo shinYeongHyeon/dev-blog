@@ -103,7 +103,7 @@ export default async function Post({ params }: Props) {
                   return (
                       <b
                           {...props}
-                          className="text-[137%]"
+                          className="text-[105%]"
                       >{children}</b>
                   );
               },
