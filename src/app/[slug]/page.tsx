@@ -10,9 +10,7 @@ import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
 
 interface Props {
-  params: {
-    slug: string
-  }
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -39,11 +37,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function PostPage({ params }: Props) {
+export default async function Post({ params }: Props) {
   const { slug } = await params;
   const post = allPosts.find((post) => post.path === slug)
   let series: IPost[] = [];
-
 
   if (!post) {
     return <div>Post not found</div>
@@ -72,7 +69,7 @@ export default async function PostPage({ params }: Props) {
       <div className="grid grid-cols-12 gap-4 my-4">
         <div className="col-span-10 text-gray-100">
           <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, remarkBreaks]}
             rehypePlugins={[rehypeRaw]}
             components={{
               code: ({ node, children, ...props }: any) => {

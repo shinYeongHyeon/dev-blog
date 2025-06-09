@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   },
 }
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: { tag?: string; series?: string }
-}) {
+interface Props {
+  searchParams: Promise<{ tag?: string; series?: string }>;
+}
+
+export default async function Home({ searchParams }: Props) {
   const { tag, series } = await searchParams;
 
   const posts = tag
@@ -31,17 +31,16 @@ export default async function Home({
   const seriesList = [...new Set(allPosts.map(({ seriesId }) => seriesId))].filter((series): series is string => series !== undefined)
 
   const postComponents = posts.map(({ path, title, listContents, datetime, tags }) => (
-    <div className="my-4" key={`box-${path}`}>
-      <PostList
-        key={path}
-        title={title}
-        contents={listContents}
-        path={path}
-        datetime={datetime}
-        tags={tags}
-      />
-    </div>
-  ));
+    <PostList
+      key={path}
+      path={path}
+      title={title}
+      contents={listContents}
+      datetime={datetime}
+      tags={tags}
+    />
+  ))
+
   const postCount = posts.length;
 
   const hashtagComponents = hashtags.map((tag) => (

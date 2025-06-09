@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import 'styles/global.css'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import 'styles/global.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,12 +31,12 @@ export default function RootLayout({
           <nav className="bg-gray-700 shadow-lg">
             <div className="max-w-7xl mx-auto px-4">
               <div className="flex space-x-4">
-                <a href="/" className="px-3 py-2 rounded-md text-sm font-medium text-red-300 hover:bg-gray-700 hover:text-white">
+                <Link href="/" className="px-3 py-2 rounded-md text-sm font-medium text-red-300 hover:bg-gray-700 hover:text-white">
                   DEN.SHIN.DEV
-                </a>
-                <a href="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                </Link>
+                <Link href="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                   CONTACT
-                </a>
+                </Link>
               </div>
             </div>
           </nav>
