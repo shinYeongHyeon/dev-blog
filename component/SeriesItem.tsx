@@ -10,10 +10,10 @@ const SeriesItem: React.FC<Props> = ({ title, path }) => {
     return (
         <div>
             <Link 
-                href={`/posts/${path}`}
-                className="text-lg font-medium text-white hover:text-gray-300"
+                href={`/${path}`}
+                className="font-medium text-white hover:text-gray-300 underline"
             >
-                <span className="text-sm">{title}</span>
+                <span className="text-xs">{title}</span>
             </Link>
         </div>
     );

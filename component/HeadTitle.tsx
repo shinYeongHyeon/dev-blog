@@ -13,8 +13,4 @@ const HeadTitle: NextPage<Props> = ({ title }) => {
     );
 };
 
-HeadTitle.defaultProps = {
-    title: 'Den`s Dev Blog',
-};
-
 export default HeadTitle;

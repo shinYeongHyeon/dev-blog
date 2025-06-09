@@ -23,7 +23,7 @@ const PostList: React.FC<Props> = ({
         <div className="mb-8">
             <div className="flex items-center mb-2">
                 <Link 
-                    href={`/posts/${path}`}
+                    href={`/${path}`}
                     className="text-xl font-semibold text-white hover:text-gray-300"
                 >
                     {title}

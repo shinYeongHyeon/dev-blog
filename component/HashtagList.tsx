@@ -9,10 +9,10 @@ const HashtagList: React.FC<Props> = ({ tag }) => {
     return (
         <div>
             <Link 
-                href={`/posts?tag=${tag}`}
-                className="text-lg font-medium text-white hover:text-gray-300"
+                href={`/?tag=${tag}`}
+                className="text-sm font-medium text-white hover:text-gray-300"
             >
-                <span className="text-sm">#{tag}</span>
+                <span>#{tag}</span>
             </Link>
         </div>
     );
