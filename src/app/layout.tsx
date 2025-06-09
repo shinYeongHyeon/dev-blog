@@ -4,6 +4,7 @@ import 'styles/global.css'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Link from 'next/link'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           </main>
         </div>
         <ToastContainer />
+        <SpeedInsights />
       </body>
     </html>
   )
