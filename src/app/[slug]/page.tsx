@@ -6,7 +6,6 @@ import { allPosts } from 'posts/AllPosts'
 import { IPost } from 'posts/interfaces/IPost'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
 
 interface Props {
@@ -70,7 +69,7 @@ export default async function Post({ params }: Props) {
       <div className="grid grid-cols-12 gap-4 my-4">
         <div className="col-span-10 text-gray-100">
           <ReactMarkdown
-            remarkPlugins={[remarkGfm, remarkBreaks]}
+            remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}
             components={{
               code: ({ node, children, ...props }: any) => {

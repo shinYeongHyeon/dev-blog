@@ -72,8 +72,10 @@ import { SvelteCustomComponent } from "./SvelteCustomComponent";
 import { GitHookError } from "./GitHookError";
 import {TypescriptEsModuleInterop} from "./TypescriptEsModuleInterop";
 import { JSCompatibility } from './JSCompatibility';
+import { JSValueRefer } from './JSValueRefer';
 
 export const allPosts: IPost[] = [
+    JSValueRefer,
     JSCompatibility,
     TypescriptEsModuleInterop,
     GitHookError,
