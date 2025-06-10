@@ -27,12 +27,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.listContents,
+    keywords: post.keywords || [],
     openGraph: {
       title: post.title,
       description: post.listContents,
       type: 'article',
       publishedTime: post.datetime,
-      tags: post.tags,
+      tags: post.keywords ? post.keywords : post.tags,
     },
   }
 }

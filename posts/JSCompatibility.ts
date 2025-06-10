@@ -55,4 +55,5 @@ if (!Promise.prototype.finally) {
   datetime: '2025년 06월 09일 22시 35분',
   tags: [JAVASCRIPT],
   seriesId: JS_DEEPDIVE,
+  keywords: ['js', 'javascript', '호환성', 'polyfill', '트랜스파일', 'babel']
 };
