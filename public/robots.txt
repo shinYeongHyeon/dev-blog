@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://den.shin.dev/sitemap.xml 

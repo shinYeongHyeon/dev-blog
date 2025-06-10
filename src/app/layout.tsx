@@ -10,7 +10,17 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Den's Dev Blog",
-  description: 'Den`s Dev Blog',
+  description: '개발 관련 지식과 경험을 공유하는 기술 블로그입니다.',
+  keywords: ['개발', '프로그래밍', '웹 개발', '기술 블로그', 'Den Shin'],
+  authors: [{ name: 'Den Shin' }],
+  openGraph: {
+    title: "Den's Dev Blog",
+    description: '개발 관련 지식과 경험을 공유하는 기술 블로그입니다.',
+    url: 'https://shinyeonghyeon.co.kr/',
+    siteName: "Den's Dev Blog",
+    locale: 'ko_KR',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
