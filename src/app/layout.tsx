@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Link from 'next/link'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -59,6 +60,7 @@ export default function RootLayout({
         </div>
         <ToastContainer />
         <SpeedInsights />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID as string} />
       </body>
     </html>
   )

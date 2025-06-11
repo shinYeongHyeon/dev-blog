@@ -11,6 +11,7 @@
         "start": "next start"
     },
     "dependencies": {
+        "@next/third-parties": "15.3.3",
         "@vercel/speed-insights": "1.2.0",
         "lodash": "4.17.21",
         "next": "15.3.3",
