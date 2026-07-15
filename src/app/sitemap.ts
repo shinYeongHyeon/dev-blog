@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 블로그 포스트 페이지들
   const postRoutes = allPosts.map((post) => {
-    const lastModified = (parseKoreanDatetime(post.datetime) ?? new Date()).toISOString()
+    const lastModified = (parseKoreanDatetime(post.updatedDatetime ?? post.datetime) ?? new Date()).toISOString()
 
     return {
       url: `${baseUrl}/${post.path}`,

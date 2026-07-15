@@ -54,6 +54,7 @@ dayjs(); // 정상 동작
 `,
     listContents: `TypeScript에서 dayjs 등 CommonJS 모듈 import 시 발생하는 TypeError: (0, xxx_1.default) is not a function 에러의 원인과 해결법. tsconfig의 esModuleInterop 설정과 import 구문 대안을 정리했다.`,
     datetime: '2023년 07월 23일 17시 10분',
+    updatedDatetime: '2026년 07월 15일 15시 00분',
     tags: [TYPESCRIPT],
     keywords: ['typescript', 'esModuleInterop', 'TypeError is not a function', 'dayjs_1.default is not a function', 'CommonJS', 'ES Module', 'tsconfig', 'allowSyntheticDefaultImports'],
 };

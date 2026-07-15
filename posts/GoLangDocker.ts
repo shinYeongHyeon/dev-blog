@@ -91,6 +91,7 @@ CMD ["reflex", "-c", "reflex.conf"]
 좋은 포스팅이었던 [원글](https://blog.puppyloper.com/menus/Golang/articles/Golang과%20docker를%20이용한%20개발환경%20만들기%20(feat.%20hot%20reload))을 링크하며 마무리`,
     listContents: `Docker로 Go(Golang) 개발환경 구축하기. air를 이용한 Hot Reload 설정, Dockerfile 작성, Apple Silicon(M1) 지원 현황까지 최신 기준으로 정리했다.`,
     datetime: '2021년 03월 14일 15시 11분',
+    updatedDatetime: '2026년 07월 15일 15시 00분',
     tags: [GOLANG],
     keywords: ['golang', 'docker', 'go docker 개발환경', 'hot reload', 'air', 'reflex', 'Dockerfile', 'apple silicon', 'M1'],
 };

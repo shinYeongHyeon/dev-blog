@@ -57,6 +57,7 @@ xcode-select --install
 `,
     listContents: `macOS 업데이트 후 git 실행 시 발생하는 xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools) 오류 해결법. xcode-select --install부터 경로 초기화, 완전 재설치까지 단계별로 정리했다.`,
     datetime: '2021년 02월 07일 15시 43분',
+    updatedDatetime: '2026년 07월 15일 15시 00분',
     tags: [GIT],
     keywords: ['xcrun', 'invalid active developer path', 'missing xcrun', 'xcode-select', 'Command Line Tools', 'macOS 업데이트 git 오류', 'git', 'mac'],
 };

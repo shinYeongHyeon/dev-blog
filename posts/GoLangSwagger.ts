@@ -89,6 +89,7 @@ httpSwagger 는 Step2 작업으로 임포트 됐을거고, **_** 부분을 따�
 구몬이 되어준 [링크](https://www.soberkoder.com/swagger-go-api-swaggo/) 쇽쇽`,
     listContents: `Go(Golang) API 프로젝트에 swaggo/swag으로 Swagger 문서를 붙이는 방법. swag CLI 설치부터 어노테이션 작성, swag init, Swagger UI 라우팅까지 단계별로 정리했다.`,
     datetime: '2021년 03월 15일 00시 31분',
+    updatedDatetime: '2026년 07월 15일 15시 00분',
     tags: [GOLANG],
     keywords: ['golang', 'swagger', 'swaggo', 'swag init', 'http-swagger', 'go API 문서', 'swagger ui', 'go install swag'],
 };

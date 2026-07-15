@@ -6,6 +6,7 @@ export const SvelteInit: IPost = {
   path: 'SvelteInit',
   listContents: `Svelte 5 프로젝트를 sv CLI로 생성하고 TypeScript와 SMUI(Svelte Material UI)까지 설치하는 방법. 구버전 degit template 방식과의 차이도 함께 정리했다.`,
   datetime: '2022년 03월 19일 21시 08분',
+  updatedDatetime: '2026년 07월 15일 15시 00분',
   tags: [SVELTE],
   keywords: ['svelte', 'svelte 5', 'sveltekit', 'sv create', 'svelte typescript', 'SMUI', 'svelte material ui', 'smui-theme', 'svelte 설치'],
   contents: `

@@ -6,6 +6,7 @@ export const GitRemotePassword20210813: IPost = {
     path: 'GitRemotePassword20210813',
     listContents: `GitHub push 시 발생하는 "Support for password authentication was removed" 오류 해결법. GitHub CLI, Personal Access Token(PAT), SSH 세 가지 방법을 최신 기준으로 정리했다.`,
     datetime: '2021년 08월 14일 22시 47분',
+    updatedDatetime: '2026년 07월 15일 15시 00분',
     tags: [GIT],
     keywords: ['git', 'github', 'password authentication was removed', 'personal access token', 'PAT', 'fine-grained token', 'gh auth login', 'SSH', '깃허브 인증 오류'],
     contents: `

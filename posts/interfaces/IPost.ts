@@ -5,6 +5,7 @@ export interface IPost {
     tags: string[];
     path: string;
     datetime: string;
+    updatedDatetime?: string;
     seriesId?: string;
     keywords?: string[];
 }

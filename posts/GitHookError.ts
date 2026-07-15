@@ -6,6 +6,7 @@ export const GitHookError: IPost = {
     path: 'GitHookError',
     listContents: `git hook 설정 시 발생하는 "The '.git/hooks/pre-commit' hook was ignored because it's not set as executable" 오류 해결법. chmod 실행 권한 부여, husky 사용 시 처리, 팀 공유 시 권한 커밋까지 정리했다.`,
     datetime: '2022년 05월 20일 19시 59분',
+    updatedDatetime: '2026년 07월 15일 15시 00분',
     tags: [GIT],
     keywords: ['git hook', 'githook', 'not set as executable', 'hook was ignored', 'pre-commit', 'chmod', 'husky', 'core.hooksPath'],
     contents: `

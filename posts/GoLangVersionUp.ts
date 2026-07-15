@@ -6,6 +6,7 @@ export const GoLangVersionUp: IPost = {
     path: 'GoLangVersionUp',
     listContents: `Homebrew로 Go(Golang) 버전을 최신으로 업데이트하는 방법. brew upgrade go부터 특정 버전 설치, Go 1.21+의 툴체인 자동 관리(GOTOOLCHAIN)까지 정리했다.`,
     datetime: '2021년 12월 05일 10시 04분',
+    updatedDatetime: '2026년 07월 15일 15시 00분',
     tags: [GOLANG],
     keywords: ['go', 'golang', 'go 버전 업데이트', 'go 버전 업그레이드', 'brew upgrade go', 'homebrew', 'GOTOOLCHAIN', 'go 버전 관리'],
     contents: `

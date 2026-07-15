@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `/${post.path}`,
       type: 'article',
       publishedTime: parseKoreanDatetime(post.datetime)?.toISOString(),
+      modifiedTime: post.updatedDatetime ? parseKoreanDatetime(post.updatedDatetime)?.toISOString() : undefined,
       tags: post.keywords ? post.keywords : post.tags,
     },
   }
@@ -66,6 +67,7 @@ export default async function Post({ params }: Props) {
     headline: post.title,
     description: post.listContents,
     datePublished: parseKoreanDatetime(post.datetime)?.toISOString(),
+    dateModified: post.updatedDatetime ? parseKoreanDatetime(post.updatedDatetime)?.toISOString() : undefined,
     author: {
       '@type': 'Person',
       name: 'Den Shin',
