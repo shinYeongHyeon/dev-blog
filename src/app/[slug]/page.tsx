@@ -1,5 +1,6 @@
 import MarkdownCode from 'component/markdown/MarkdownCode'
 import SeriesItem from 'component/SeriesItem'
+import { parseKoreanDatetime } from 'lib/date'
 import map from 'lodash/map'
 import { Metadata } from 'next'
 import { allPosts } from 'posts/AllPosts'
@@ -10,6 +11,10 @@ import rehypeRaw from 'rehype-raw'
 
 interface Props {
   params: Promise<{ slug: string }>;
+}
+
+export function generateStaticParams() {
+  return allPosts.map((post) => ({ slug: post.path }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -27,11 +32,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.listContents,
     keywords: post.keywords || [],
+    alternates: {
+      canonical: `/${post.path}`,
+    },
     openGraph: {
       title: post.title,
       description: post.listContents,
+      url: `/${post.path}`,
       type: 'article',
-      publishedTime: post.datetime,
+      publishedTime: parseKoreanDatetime(post.datetime)?.toISOString(),
       tags: post.keywords ? post.keywords : post.tags,
     },
   }
@@ -50,8 +59,27 @@ export default async function Post({ params }: Props) {
     series = allPosts.filter((otherPost) => post.seriesId === otherPost.seriesId)
   }
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.listContents,
+    datePublished: parseKoreanDatetime(post.datetime)?.toISOString(),
+    author: {
+      '@type': 'Person',
+      name: 'Den Shin',
+      url: 'https://shinyeonghyeon.co.kr',
+    },
+    mainEntityOfPage: `https://shinyeonghyeon.co.kr/${post.path}`,
+    keywords: post.keywords?.join(', '),
+  }
+
   return (
     <article className="prose prose-invert max-w-none">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h1 className="text-2xl font-bold text-white">{post.title}</h1>
       <div className="text-gray-400 mb-8">
         <time dateTime={post.datetime} className="text-xs text-gray-400">{post.datetime}</time>

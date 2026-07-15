@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { parseKoreanDatetime } from 'lib/date'
 import { allPosts } from 'posts/AllPosts'
 
 export async function GET() {
@@ -9,7 +10,7 @@ export async function GET() {
       <title><![CDATA[${post.title}]]></title>
       <link>${baseUrl}/${post.path}</link>
       <guid>${baseUrl}/${post.path}</guid>
-      <pubDate>${new Date(post.datetime).toUTCString()}</pubDate>
+      <pubDate>${(parseKoreanDatetime(post.datetime) ?? new Date()).toUTCString()}</pubDate>
       <description><![CDATA[${post.listContents}]]></description>
     </item>
   `).join('')

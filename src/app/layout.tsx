@@ -10,6 +10,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://shinyeonghyeon.co.kr'),
   title: "Den's Dev Blog",
   description: '개발 관련 지식과 경험을 공유하는 기술 블로그입니다.',
   keywords: ['개발', '프로그래밍', '웹 개발', '기술 블로그', 'Den Shin'],
@@ -21,6 +22,12 @@ export const metadata: Metadata = {
     siteName: "Den's Dev Blog",
     locale: 'ko_KR',
     type: 'website',
+    images: ['/den.JPG'],
+  },
+  twitter: {
+    card: 'summary',
+    title: "Den's Dev Blog",
+    description: '개발 관련 지식과 경험을 공유하는 기술 블로그입니다.',
   },
 }
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://den.shin.dev/sitemap.xml 
+Sitemap: https://shinyeonghyeon.co.kr/sitemap.xml
