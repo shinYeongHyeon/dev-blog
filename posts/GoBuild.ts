@@ -62,9 +62,9 @@ args 의 첫번째는 이미 채워져 있는 것을 볼 수 있다. 그래서 �
 
   
 _해당 포스팅은 Mastering Go 원서를 번역 및 실습해본 결과를 포스팅한 것이다._`,
-    listContents: `Golang 에서 서비스/어플리케이션 실행시에 Argument 들을 받는 방법에 대해서 알아보도록 하자
-서비스를 실행시키는 대표적인 두 방법 Build 와 Run 각각 알아보도록 하려고 한다.`,
+    listContents: `Golang에서 프로그램 실행 시 Argument를 받는 방법을 os.Args로 알아본다. go run과 go build 두 가지 실행 방식에서 인자를 넘기는 법과 첫 번째 인자의 차이를 예제로 살펴본다.`,
     datetime: '2021년 02월 13일 14시 42분',
     tags: [GOLANG, TRANSLATION],
+    keywords: ['go', 'golang', 'go build', 'go run', 'os.Args', '커맨드라인 인자', 'golang argument', 'mastering go'],
     seriesId: GOLANG_TOUR,
 };

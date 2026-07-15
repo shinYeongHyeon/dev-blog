@@ -4,9 +4,10 @@ import { GOLANG } from './presentationals/Tags';
 export const GoLangSingleton: IPost = {
     title: 'Golang singleton pattern 과 init 함수',
     path: 'GoLangSingleton',
-    listContents: `Singleton Pattern 은 가장 흔하게 볼 수 있는 디자인 패턴 중에 하나이다.`,
+    listContents: `Golang에서 Singleton Pattern을 구현하는 방법을 알아본다. 패키지가 최초 import될 때 딱 한 번 자동 실행되는 init 함수를 활용해 하나의 객체만 생성하고 접근하게 하는 코드를 예제로 살펴본다.`,
     datetime: '2022년 03월 08일 00시 17분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'singleton', 'init', '싱글톤 패턴', '디자인 패턴', 'go init 함수', 'package'],
     contents: `
 Singleton Pattern 은 가장 흔하게 볼 수 있는 디자인 패턴 중에 하나이다.
 

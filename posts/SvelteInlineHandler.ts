@@ -4,9 +4,10 @@ import { SVELTE } from './presentationals/Tags';
 export const SvelteInlineHandler: IPost = {
   title: 'Svelte 의 인라인 핸들러 권장',
   path: 'SvelteInlineHandler',
-  listContents: `Svelte 에서는 React, Vue 와 달리 인라인 핸들러를 권장/지향하고 있다.`,
+  listContents: `React, Vue와 달리 Svelte가 인라인 핸들러를 권장하는 이유를 알아본다. Virtual DOM 없이 컴파일되기에 메모리 불이익이 없고, 인라인 핸들러는 $$invalidate 코드로 변환되어 할당 연산자 없이도 데이터 갱신이 이루어진다.`,
   datetime: '2021년 07월 03일 14시 51분',
   tags: [SVELTE],
+  keywords: ['svelte', '인라인 핸들러', 'inline handler', '$$invalidate', 'virtual dom', 'svelte 반응성', 'each 블록'],
   contents: `
 Svelte 에서는 React, Vue 와 달리 인라인 핸들러를 **권장\/지향** 하고 있다.
 

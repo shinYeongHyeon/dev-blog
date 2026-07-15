@@ -54,7 +54,7 @@ myName과 yourName은 동일한 객체를 참조하므로, myName이 변경되�
 JS 에서는 값이 복사될지, 참조가 복사될지는 값의 타입에 따라 결정된다.
 
 `,
-  listContents: `원시타입,객체 그리고 값 vs 참조`,
+  listContents: `JavaScript에서 String, Number 같은 원시타입은 값 그 자체가 복사되고 객체는 참조가 할당된다. 값 vs 참조가 타입에 따라 어떻게 결정되는지 변수 할당 예제 코드로 알아본다.`,
   datetime: '2025년 06월 10일 21시 30분',
   tags: [JAVASCRIPT],
   seriesId: JS_DEEPDIVE,

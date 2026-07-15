@@ -58,8 +58,9 @@ useLocation 을 통해 받으면 된다.
 console 에 찍어보면 왼쪽과 같다.
 
 지금까지 React 에서 화면 전환을 할 때 간단하게 사용가능한 Hook 두 가지에 대해서 알아보았다.`,
-    listContents: `이번 포스팅에서는 React 에서 화면전환에 사용되는 react-router-dom 에서 useHistory 와 useLocation 에 대해 알아보려고 한다.`,
+    listContents: `react-router-dom의 useHistory Hook으로 pathname, search, state를 담아 페이지를 전환하고, useLocation Hook으로 전달된 값을 받는 방법을 React 예제 코드로 알아본다.`,
     datetime: '2021년 05월 09일 22시 04분',
     tags: [REACT],
+    keywords: ['react', '리액트', 'react-router-dom', 'useHistory', 'useLocation', '페이지 전환', 'history.push', '라우팅'],
 };
 

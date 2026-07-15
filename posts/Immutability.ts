@@ -43,7 +43,8 @@ a.k = 2;
 ![R1280x0-18](https://github.com/shinYeongHyeon/dev-blog/assets/74130738/f9eb17d8-1e99-4a80-9213-b187f5f4a6ba)
 
 (중간에 빨간 줄은 무시)`,
-    listContents: `불변성 (Immutability) 이란, 문자 그대로 변하지 않는 것을 의미한다,`,
+    listContents: `자바스크립트의 불변성(Immutability)과 가변성을 메모리 관점에서 정리했다. Number, String 같은 원시데이터는 불변이고 Object, Array 같은 객체데이터는 가변이라 참조를 공유하면 함께 변한다는 것을 예제로 살펴본다.`,
     datetime: '2021년 06월 20일 00시 35분',
     tags: [JAVASCRIPT],
+    keywords: ['JavaScript', '불변성', 'Immutability', '원시데이터', '객체데이터', '가변성', '메모리 참조', 'Garbage Collection'],
 };

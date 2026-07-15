@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerRecommend: IPost = {
     title: 'Docker (도커) 를 시작해야"만" 하는 이유',
     path: 'DockerRecommend',
-    listContents: `도커를 시작해야만 하는 이유에 대해서 알아보자`,
+    listContents: `도커를 시작해야 하는 이유를 정리했다. 도커 이미지를 통한 개발·운영 환경 통합과 배포 편의성, 모놀리스와 마이크로서비스 아키텍처 비교, 쿠버네티스 같은 컨테이너 오케스트레이션 플랫폼까지 도커의 장점을 다룬다.`,
     datetime: '2021년 06월 27일 22시 00분',
     tags: [DOCKER],
+    keywords: ['docker', '도커', '도커 이미지', '마이크로서비스', '모놀리스', '컨테이너 오케스트레이션', '쿠버네티스', '도커 장점'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 1. 애플리케이션의 개발과 배포가 편해진다.

@@ -53,8 +53,9 @@ done
 1
 0
 \`\`\``,
-    listContents: `이전에 알아보았던 Defer 에 대해서 더 알아보는 시간을 가져보자`,
+    listContents: `Go의 defer는 해당 라인에서 바로 실행되지 않고 스택에 쌓였다가 함수가 끝날 때 후입선출로 실행된다. defer 시점의 변수 값이 유지되는 이유와 for문 안 defer의 실행 순서를 예제로 알아본다.`,
     datetime: '2021년 01월 31일 01시 28분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'defer', '스택', '후입선출', 'LIFO', 'go defer 실행 순서', 'go 함수'],
     seriesId: GOLANG_TOUR,
 };

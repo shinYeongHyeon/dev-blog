@@ -51,7 +51,7 @@ if (!Promise.prototype.finally) {
 <br>
 이와 같이 트랜스파일이나 폴리필을 통해서 구형과 신형, 둘 사이의 간극을 메꾸고 있습니다.
 `,
-  listContents: `하위호환성이 보장되는 Javascript`,
+  listContents: `JavaScript는 하위 호환성(backwards compatibility)을 보장하는 언어다. babel 트랜스파일과 Promise.prototype.finally 예제로 보는 polyfill로 구형 엔진과의 간극을 메꾸는 방법을 알아본다.`,
   datetime: '2025년 06월 09일 22시 35분',
   tags: [JAVASCRIPT],
   seriesId: JS_DEEPDIVE,

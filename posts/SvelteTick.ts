@@ -69,7 +69,8 @@ tick DOM 업데이트가 완료 되고 Promise 객체를 반환한다.
 
 tick 을 통해 DOM 업데이트를 보장해줄때까지 기다린다. 그리고 그 다음이 실행되기 때문에 원하는 결과가 나올 것이다 !
 `,
-  listContents: `LifeCycle 얘기할 때 tick 이 거론되기도 하는데, 나는 이걸 lifeCycle 에 넣어야 하나~ 애매하긴 하다.`,
+  listContents: `Svelte는 태스크가 끝난 뒤 화면이 갱신되므로 값 할당 직후 DOM을 읽으면 이전 값이 나온다. DOM 업데이트 완료 후 Promise를 반환하는 tick 함수를 await해서 갱신된 DOM에 접근하는 방법을 예제로 알아본다.`,
   datetime: '2021년 06월 20일 01시 00분',
   tags: [SVELTE],
+  keywords: ['svelte', 'tick', 'await tick', 'dom 업데이트', '반응성', 'promise', 'svelte lifecycle', '화면 갱신'],
 };

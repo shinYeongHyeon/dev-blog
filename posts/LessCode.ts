@@ -201,8 +201,9 @@ function increment() {
 예를 들어 reactive declarations은 기본적으로 상용구없이 React의 useMemo, useCallback 및 useEffect 작업을 수행합니다 (또는 각 state 변경시 인라인 함수 및 배열을 만드는 garbage collection overhead 없이).  
   
 어떻게 그러냐구요? 다른 제약 조건을 선택하기 때문이죠. Svelte 는 컴파일러이기 때문에, Javscript의 특성에 얽매이지 않습니다. 언어의 의미에 중점을 두기 보다는 컴포넌트 저작 경험을 디자인 할 수 있습니다. 역설적이게도 이는 예를 들어, 프록시나 Hook을 통하지 않고 자연스럽게 변수를 사용하는 것과 같은 관용적 코드를 생성하는 동시에 훨씬 더 성능이 뛰어난 앱을 제공하죠.`,
-    listContents: `Svelte 공식문석 번역 : Write less Code`,
+    listContents: `Svelte 공식문서 번역: Write less code. 같은 컴포넌트를 React, Vue, Svelte로 구현해 코드량을 비교하고, bind:value 바인딩과 할당 연산자 상태 갱신 등 Svelte가 보일러플레이트를 줄이는 설계를 소개한다.`,
     datetime: '2021년 01월 30일 22시 16분',
     tags: [SVELTE, TRANSLATION],
+    keywords: ['svelte', 'write less code', 'react', 'vue', 'svelte 공식문서 번역', '보일러플레이트', 'bind:value', 'svelte react 비교'],
     seriesId: SVELTE_TOUR,
 };

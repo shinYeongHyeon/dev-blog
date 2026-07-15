@@ -69,8 +69,8 @@ const [call, { data, loading, called }] = useLazyQuery<
 지금까지, useQuery 와 lazyQuery를 React(w/ Typescript) 에서 사용하는 것에 대해서 간단하게 알아보았다.
 
 다음에는 **FRAGEMENT** 에 대해서 알아보도록 하려 한다.`,
-    listContents: `React 에서 GraphQL을 사용할 때 보통 useQuery를 사용한다.
-useQuery 란, API 로 치면 API Call 을 하는 것이라고 보면 된다.`,
+    listContents: `React와 TypeScript 환경에서 GraphQL의 useQuery로 데이터를 가져오는 방법과, 원하는 시점에 쿼리를 실행할 수 있는 useLazyQuery(lazyQuery) 사용법을 예제 코드로 알아본다.`,
     datetime: '2021년 05월 11일 22시 31분',
     tags: [GRAPHQL, REACT],
+    keywords: ['graphql', '그래프큐엘', 'react', 'useQuery', 'useLazyQuery', 'lazyQuery', 'apollo codegen', 'typescript'],
 };

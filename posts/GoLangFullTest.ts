@@ -4,9 +4,10 @@ import { GOLANG } from './presentationals/Tags';
 export const GoLangFullTest: IPost = {
     title: 'GoLang 테스트 전체 돌리기',
     path: 'GoLangFullTest',
-    listContents: `일반 명령어만으로는 전체 테스트가 되지 않는다. 그 해결볍에 대해 알아보자`,
+    listContents: `go test 명령어는 현재 디렉토리의 테스트만 실행하고 하위 디렉토리는 확인하지 않는다. go test ./... 명령어로 GoLang 프로젝트 전체 테스트를 한 번에 돌리는 방법을 알아본다.`,
     datetime: '2021년 07월 22일 01시 18분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'go test', '전체 테스트', '테스트 실행', '하위 디렉토리', 'golang 테스트'],
     contents: `
 GoLang 에서 테스트를 돌리기 위해서는 **go test** 를 쓰면 된다.  
 그런데, 해당 명령어는 디렉토리 안에 있는 것만 확인한다.  

@@ -19,7 +19,8 @@ parseInt('1') 은 +'1' 과 동일하다는 것이다.
 그러나, 브라우저별로 속도가 다르고 일부 연산 값이 다르다.  
 [브라우저 속도](http://phrogz.net/js/string_to_number.html)  
 [결과 값](https://stackoverflow.com/questions/17106681/parseint-vs-unary-plus-when-to-use-which/17106702#17106702)`,
-    listContents: `+'1' === parseInt('1')`,
+    listContents: `parseInt('1')과 동일하게 동작하는 단항 더하기(+) 표현을 소개한다. 문자열을 숫자로 변환하는 두 방법의 브라우저별 속도 차이와 일부 연산 값이 다른 경우도 함께 살펴본다.`,
     datetime: '2021년 01월 30일 20시 05분',
     tags: [JAVASCRIPT],
+    keywords: ['javascript', '자바스크립트', 'parseInt', 'unary plus', '단항 연산자', '문자열 숫자 변환', '형변환'],
 };

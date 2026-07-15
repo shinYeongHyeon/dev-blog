@@ -5,9 +5,10 @@ import { GOLANG_TOUR } from "./presentationals/Series";
 export const GoLangAssignment: IPost = {
     title: 'GoLang 변수 할당/생성 := and =',
     path: 'GoLangAssignment',
-    listContents: `Go 에서 변수를 생성/할당하는데는 익히 알고 있듯 2가지 방법이 있다.`,
+    listContents: `Go에서 변수를 생성하고 할당하는 두 가지 방법인 var =와 :=(short assignment statement)의 차이를 알아보고, 이미 선언된 변수에 :=를 쓸 때 나는 재할당 에러와 여러 변수 선언 시의 예외를 살펴본다.`,
     datetime: '2022년 03월 02일 19시 43분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'short assignment statement', 'var', '변수 선언', '변수 할당', '재할당', 'go 변수'],
     seriesId: GOLANG_TOUR,
     contents: `
 Go 에서 변수를 생성/할당하는데는 익히 알고 있듯 2가지 방법이 있다.

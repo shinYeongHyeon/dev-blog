@@ -73,7 +73,8 @@ job.stop();
 귀찮게 서버에서 직접하는 것이 아니라 어플리케이션을 띄울 때 할수 있다는게 활용도가 높을 듯.
 
 자세한 내용들은 [NestJS 공식문서](https://docs.nestjs.com/techniques/task-scheduling)를 링크 걸어둘테니 살펴보면 좋을 것 같다.`,
-    listContents: `이전 시간 Cron 에 대해 알아보기도 했으니, NestJS 에서 TaskScheduling 에 대해 알아보자.`,
+    listContents: `NestJS 의 Task Scheduling 을 알아본다. @nestjs/schedule 설치와 @Cron 데코레이터 사용법, SchedulerRegistry 로 CronJob 을 가져와 제어하는 방법을 정리했다.`,
     datetime: '2021년 02월 08일 01시 10분',
     tags: [NESTJS],
+    keywords: ['NestJS', 'Task Scheduling', '@nestjs/schedule', 'Cron', 'SchedulerRegistry', 'CronJob', '스케줄링', '크론 작업'],
 };

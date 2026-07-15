@@ -99,8 +99,9 @@ function addNumber() {
 }
 \`\`\`
 `,
-  listContents: `$: 그리고 Statement`,
+  listContents: `Svelte의 반응형 선언 문법을 알아본다. count가 바뀔 때마다 doubled 같은 변수를 자동 갱신하고 조건문과 블록에도 쓸 수 있으며, 배열은 push가 아닌 할당(assignment)이 있어야 반응성이 동작한다는 점을 예제로 설명한다.`,
   datetime: '2021년 02월 01일 00시 10분',
   tags: [SVELTE],
+  keywords: ['svelte', 'reactive statement', 'reactive declarations', '반응형 선언', 'reactivity', 'svelte 반응성', '할당 연산자'],
   seriesId: SVELTE_TOUR,
 };

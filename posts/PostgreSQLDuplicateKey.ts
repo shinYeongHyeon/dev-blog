@@ -17,7 +17,8 @@ SELECT setval('table_id_seq', (SELECT MAX(id) FROM yourtable));
 \`\`\`
 
 위와 같이 yourtable 에 문제되는 테이블을 적어주면 된다고 한다!`,
-    listContents: 'duplicate key value violates unique constraint ~_pkey. 뭐 딱보니까 Primary Key 가 문제가 되는 거 같은데, Auto Increment 를 설정안해놓았나 싶었다.',
+    listContents: `PostgreSQL 의 duplicate key value violates unique constraint 에러 해결법. 테이블 값과 Sequence Object 값이 어긋나 생기는 문제로, setval 로 시퀀스를 맞추면 해결된다.`,
     datetime: '2021년 02월 21일 20시 47분',
     tags: [POSTGRE, DATABASE],
+    keywords: ['PostgreSQL', 'duplicate key value violates unique constraint', 'pkey', 'setval', 'Sequence', 'Auto Increment', '시퀀스 초기화', 'PostgreSQL 에러'],
 };

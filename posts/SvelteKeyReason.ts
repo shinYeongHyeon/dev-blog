@@ -4,9 +4,10 @@ import { SVELTE } from './presentationals/Tags';
 export const SvelteKeyReason: IPost = {
   title: '반복 블록에서 key 를 사용하는 이유 (feat. Key 블록)',
   path: 'SvelteKeyReason',
-  listContents: `삭제되지 않은 것들을 새로 렌더링할 없을텐데, 어떻게 해야 할까 ?`,
+  listContents: `Svelte each 블록에서 배열 항목 삭제 시 li 전체가 다시 렌더링되는 문제를 key를 지정해 변경된 요소만 렌더링하도록 개선하는 방법과, 값이 바뀔 때마다 내용을 파괴하고 재생성하는 Key 블록을 알아본다.`,
   datetime: '2021년 06월 27일 15시 29분',
   tags: [SVELTE],
+  keywords: ['svelte', 'each key', 'key 블록', 'key block', '반복 블록', '리스트 렌더링', 'svelte each', '렌더링 최적화'],
   contents: `
 배열의 항목을 보여주고, 삭제하는 코드에 대해서 보도록 하자.
 

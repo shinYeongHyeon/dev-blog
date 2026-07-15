@@ -4,9 +4,10 @@ import { SVELTE } from './presentationals/Tags';
 export const SvelteCustomComponent: IPost = {
   title: 'Custom component 만들기 ($$restProps, dispatch)',
   path: 'SvelteCustomComponent',
-  listContents: `오늘은 Custom Button 을 만들어보고자 한다.`,
+  listContents: `Svelte에서 커스텀 버튼 컴포넌트를 만들 때 필요한 $$restProps로 나머지 속성을 하위 컴포넌트에 전달하는 방법과 createEventDispatcher의 dispatch로 on:click 커스텀 이벤트를 연결하는 방법을 정리한다.`,
   datetime: '2022년 04월 04일 22시 29분',
   tags: [SVELTE],
+  keywords: ['svelte', '$$restProps', 'createEventDispatcher', 'dispatch', '커스텀 컴포넌트', 'custom component', 'svelte 이벤트', 'custom button'],
   contents: `
 오늘은 Custom Button 을 만들어보고자 한다.
 

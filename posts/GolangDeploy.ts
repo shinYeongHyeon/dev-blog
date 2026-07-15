@@ -29,7 +29,8 @@ GetDateofFirstMondayOfMonth 는 월의 첫번째 월요일의 "일" 을 구하�
 
 다른 언어에서는 패키지나 모듈을 배포해본적이 없어 이게 상대적으로 편리한건지 잘 모르겠으나, 일단 난 지금 편리했다.
 `,
-    listContents: `Golang 을 하면서 크롤러를 만들게 되었고, 하다보니 캘린더 관련해서 여러가지 function들이 필요해서 패키지를 직접 만들어 배포해보기로 하였다.`,
+    listContents: `Golang으로 캘린더 관련 함수 패키지 go-times를 직접 만들어 배포해본 경험기. go mod로 모듈을 구성하고 go build와 go install 후 깃허브에 배포해 go get으로 받아 쓰는 과정을 정리했다.`,
     datetime: '2021년 02월 06일 17시 03분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'go mod', 'go get', 'go install', '패키지 배포', 'golang 모듈', 'pkg.go.dev'],
 };

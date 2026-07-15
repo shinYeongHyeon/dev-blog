@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerContainer: IPost = {
     title: '도커 컨테이너 기본 다루기',
     path: 'DockerContainer',
-    listContents: `도커 컨테이너에 대해 알아보자`,
+    listContents: `docker run, pull, create, start, attach 명령어로 도커 컨테이너를 생성하고 내부로 접속하는 방법을 알아본다. docker ps로 컨테이너 목록을 확인하고 rm 명령어로 정지된 컨테이너를 삭제하는 기본 사용법을 정리했다.`,
     datetime: '2021년 06월 28일 09시 00분',
     tags: [DOCKER],
+    keywords: ['docker', '도커 컨테이너', 'docker run', 'docker ps', 'docker attach', '컨테이너 생성', '컨테이너 삭제', '도커 명령어'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 1. 컨테이너 생성

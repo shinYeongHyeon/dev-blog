@@ -40,8 +40,9 @@ names\\[5\\] = "anything" 을 해준다면 컴파일 에러가 난다.
 그리고 추가하는 부분이 다른데, append 라는 함수를 이용해주어야 하며, 해당 함수는 인자로 넘긴 첫번째 Slice \\- 예제에서의 names - 를 변화시키는게 아니라, 값을 추가해서 Return 해준다.  
 이와 같은 형태는 개발을 하다보면 실질적으로 도움이 된다.  
 원래 값을 변화시키지 않고, 리턴하는 것이 디버깅에도 조금 더 효율적이니까,`,
-    listContents: `Go 에서 배열을 다루는 법에 대해서 알아보자.`,
+    listContents: `Go 언어에서 크기를 지정하는 Array 선언 방법과 크기 제한이 없는 Slice의 차이를 알아보고, append 함수로 슬라이스에 값을 추가하는 방법을 예제 코드로 살펴본다.`,
     datetime: '2021년 01월 31일 01시 41분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'array', 'slice', 'append', 'go 배열', '슬라이스', 'go 자료구조'],
     seriesId: GOLANG_TOUR,
 };

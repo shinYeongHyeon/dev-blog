@@ -83,7 +83,8 @@ Toggle 버튼을 누를 때마다 Something 글자가 나타났다, 사라졌다
 
 ![R1280x0-15](https://github.com/shinYeongHyeon/dev-blog/assets/74130738/e30629ed-9e52-42ec-8e32-39d4cb851d0b)
 `,
-  listContents: `Svelte LifeCycle 중 onMount 와 onDestroy 에 대해서 알아보자`,
+  listContents: `Svelte 라이프사이클 중 onMount와 onDestroy를 토글 예제로 알아본다. onMount는 컴포넌트가 연결될 때, onDestroy는 해제 직전에 실행되며, onMount의 return 함수가 onDestroy 역할을 한다는 점도 다룬다.`,
   datetime: '2021년 06월 12일 00시 55분',
   tags: [SVELTE],
+  keywords: ['svelte', 'onMount', 'onDestroy', '라이프사이클', 'lifecycle', 'svelte 생명주기', '컴포넌트 마운트'],
 };

@@ -4,9 +4,10 @@ import { SVELTE } from './presentationals/Tags';
 export const SvelteBinding: IPost = {
   title: '일반요소 바인딩 : this, 입력요소 바인딩 : group',
   path: 'SvelteBinding',
-  listContents: `특정 버튼을 클릭하여서, Input Element 을 나타나거나 사라지게 하고 나타났을 때, 포커스가 가게하는 코드를 작성해보자.`,
+  listContents: `Svelte의 bind:this로 DOM 요소를 변수에 바인딩해 querySelector 없이 input에 포커스를 주는 방법과, 체크박스에 bind:group을 사용해 선택된 값들을 배열로 모으는 입력요소 바인딩을 예제로 알아본다.`,
   datetime: '2021년 06월 26일 11시 46분',
   tags: [SVELTE],
+  keywords: ['svelte', 'bind:this', 'bind:group', 'svelte 바인딩', 'tick', 'checkbox', 'input focus', 'dom 요소 바인딩'],
   contents: `
 특정 버튼을 클릭하여서, Input Element 을 나타나거나 사라지게 하고 나타났을 때, 포커스가 가게하는 코드를 작성해보자.
 

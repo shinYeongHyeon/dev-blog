@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerBasic: IPost = {
     title: 'Docker (도커) 에 관하여',
     path: 'DockerBasic',
-    listContents: `도커 (Docker) 는 리눅스 컨테이너에 여러 기능을 추가함으로써 애플리케이션을 컨테이너로써 좀 더 쉽게 사용할 수 있게 만들어진 오픈 소스프로젝트이다.`,
+    listContents: `도커(Docker)는 리눅스 컨테이너 기반의 오픈 소스 가상화 플랫폼이다. 하이퍼바이저 기반 가상 머신과 도커 컨테이너의 차이, chroot·namespace·cgroup을 이용한 프로세스 단위 격리와 성능 이점을 정리했다.`,
     datetime: '2021년 06월 27일 14시 13분',
     tags: [DOCKER],
+    keywords: ['docker', '도커', '리눅스 컨테이너', '가상화', '가상머신 vs 컨테이너', 'hypervisor', 'namespace', 'cgroup', '도커 엔진'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 1. 도커에 관하여

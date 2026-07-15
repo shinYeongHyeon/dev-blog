@@ -61,9 +61,9 @@ Structure 안에 여러 타입을 지정해서 마치 오브젝트 처럼 사용
 
 개인적으로는 2번의 방법을 더 좋아한다.  
 굳이 위의 선언문을 보지 않아도, 명시직이기때문이다.`,
-    listContents: `Go 에서는 타 언어에서 주로 사용하던 Class 와 Object 가 없다.  
-그래서 이제 알아야 할 Structure가 중요한데, 그 전에 Map에 대해서도 알아보자.`,
+    listContents: `Class와 Object가 없는 Go에서 key-value 형태의 Map을 선언하는 방법과, 여러 타입의 필드를 가진 Structure(struct)를 정의하고 초기화하는 두 가지 방식을 예제 코드로 알아본다.`,
     datetime: '2021년 01월 31일 01시 45분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'map', 'struct', 'structure', '구조체', 'go 맵', 'key-value'],
     seriesId: GOLANG_TOUR,
 };

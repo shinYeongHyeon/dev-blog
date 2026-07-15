@@ -4,10 +4,10 @@ import { ETC } from './presentationals/Tags';
 export const MockTest: IPost = {
     title: 'Testing - Mock ??',
     path: 'MockTest',
-    listContents: `요새 테스트, 더 나아가 TDD 는 개발자의 필수 덕목처럼 여겨지고 있고,
-그에 따른 강의가 나오거나 채용조건에 필수로 분류하는 곳이 많아지고 있다`,
+    listContents: `테스트에서 실제 객체 대신 가짜를 만들어 사용하는 Mock의 개념을 알아보고, jest.fn()과 mockReturnValueOnce, mockReturnValue로 반환값을 지정하는 간단한 예제를 다룬다.`,
     datetime: '2021년 09월 05일 15시 17분',
     tags: [ETC],
+    keywords: ['jest', 'mock', '모의 객체', 'jest.fn', 'mockReturnValue', '테스트', 'TDD', '단위 테스트'],
     contents: `
 ## 테스트
 

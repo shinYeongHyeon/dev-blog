@@ -4,10 +4,10 @@ import { GIT } from './presentationals/Tags';
 export const GitFork: IPost = {
     title: 'Git Fork 해서 작업해보기',
     path: 'GitFork',
-    listContents: `오픈소스에 기여하기 위해서라던지, Github Organization에 들어가서 개발을 진행하다보면
-해당 작업물을 내 저장소로 가져와서 작업을 한 후에 원 저장소에 내 코드가 추가되고 싶다 라는 생각이 들 때가 있을 것이다.`,
+    listContents: `오픈소스나 Github Organization 저장소에 기여하기 위한 Fork 워크플로우. 원저장소 Fork 와 Clone, git remote add upstream, Pull Request 로 기여하는 과정을 다룬다.`,
     datetime: '2021년 08월 10일 22시 02분',
     tags: [GIT],
+    keywords: ['git fork', 'upstream', 'git remote add', 'Pull Request', '오픈소스 기여', 'Github', 'fork 저장소 동기화', 'git fetch upstream'],
     contents: `
 **오픈소스**에 기여하기 위해서라던지, **Github Organization**에 들어가서 개발을 진행하다보면
 

@@ -4,9 +4,10 @@ import { ETC } from './presentationals/Tags';
 export const IntellijHttp: IPost = {
     title: '[IntelliJ 제품군] API호출하는 Postman, Insomnia 를 대체하는 방법',
     path: 'IntellijHttp',
-    listContents: `백엔드 개발을 하건, 프론트 개발을 하건 API 호출을 개발과는 뗄 수가 없다.`,
+    listContents: `IntelliJ 제품군에서 .http 파일로 Postman, Insomnia 없이 API 를 호출하는 방법. HTTP Request 파일 생성부터 GET, POST 호출 예제와 코드로 관리할 때의 장점을 소개한다.`,
     datetime: '2021년 08월 04일 19시 48분',
     tags: [ETC],
+    keywords: ['IntelliJ', '.http 파일', 'HTTP Request', 'Postman 대체', 'Insomnia', 'API 테스트', 'API 호출', 'HTTP Client'],
     contents: `
 백엔드 개발을 하건, 프론트 개발을 하건 API 호출을 개발과는 뗄 수가 없다.
 

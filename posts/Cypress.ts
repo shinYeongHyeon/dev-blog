@@ -4,9 +4,10 @@ import { ETC, REACT } from './presentationals/Tags';
 export const Cypress: IPost = {
     title: 'Cypress 사용해서 E2E Test 하기',
     path: 'Cypress',
-    listContents: `오늘은 Cypress 를 이용하여 E2E 테스트를 해보고자 한다`,
+    listContents: `Cypress 를 이용해 React + TypeScript 환경에서 E2E 테스트를 하는 방법. npm install cypress 설치부터 cypress.json 의 baseUrl 설정, cy.visit 를 활용한 테스트 작성까지 다룬다.`,
     datetime: '2021년 09월 22일 23시 25분',
     tags: [REACT, ETC],
+    keywords: ['Cypress', 'E2E 테스트', 'React', 'TypeScript', '프론트엔드 테스트', 'cypress open', 'cy.visit', '테스트 자동화'],
     contents: `
 오늘은 Cypress 를 이용하여 E2E 테스트를 해보고자 한다
 

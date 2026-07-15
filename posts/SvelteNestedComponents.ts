@@ -43,8 +43,9 @@ React 에서도 Component 를 사용하고, 당연히 Svelte 에서도 Component
 또한 내포되는 component 는 대문자로 표기해야하는 규칙이 있다.  
 주의할 것은, Svelte 는 {@html .. 안의 식을 검사하지 않기때문에, 이 기능을 사용할 경우 신뢰할 수 없는 원본의 HTML을 수동으로 escape 하는 것이 중요하다, 그렇지 않으면 사용자가 XSS 공격에 노출될 위험이 있습니다.
 `,
-    listContents: `Nested Components`,
+    listContents: `Svelte에서 컴포넌트를 import해 중첩 사용하는 방법을 알아본다. 부모의 스타일이 Nested 컴포넌트에는 적용되지 않는 점, 컴포넌트명은 대문자로 시작해야 하는 규칙, @html 사용 시 XSS 공격 위험에 주의해야 한다는 점을 정리한다.`,
     datetime: '2021년 01월 31일 20시 36분',
     tags: [SVELTE],
+    keywords: ['svelte', 'nested components', '중첩 컴포넌트', '@html', 'xss', 'svelte 컴포넌트', '스타일 스코프'],
     seriesId: SVELTE_TOUR,
 };

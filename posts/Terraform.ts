@@ -5,9 +5,10 @@ import { ABOUT_TERRAFORM } from "./presentationals/Series";
 export const Terraform: IPost = {
     title: 'Terraform 에 대하여 (IaC)',
     path: 'Terraform',
-    listContents: `IaC 인 Terraform 에 대해 알아보자`,
+    listContents: `하시코프의 IaC 도구 Terraform 을 소개한다. 프로비저닝, 프로바이더, 리소스, HCL 등 기본 개념과 terraform plan, apply 명령어까지 인프라를 선언적인 코드로 관리하는 방법의 기초를 정리했다.`,
     datetime: '2021년 07월 09일 18시 07분',
     tags: [TERRAFORM],
+    keywords: ['Terraform', 'IaC', 'Infrastructure as Code', 'HCL', '프로비저닝', '프로바이더', 'terraform plan', 'terraform apply', '테라폼'],
     seriesId: ABOUT_TERRAFORM,
     contents: `
 ## 1 . 테라폼이란 ?

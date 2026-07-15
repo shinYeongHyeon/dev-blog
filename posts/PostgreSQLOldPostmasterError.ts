@@ -36,7 +36,8 @@ $ rm -f postmaster.pid
 위 명령어를 입력 후 다시 서버를 시작해주면 정상적으로 시작이 된다 !
 
 [참고 아티클](https://medium.com/@rimsovankiry/the-data-directory-contains-an-unreadable-postmaster-pid-file-on-postgresql-12-mac-os-54775a641160)`,
-    listContents: '오래된 postmaster.pid 가 이미 실행중이다, 죽여달라...는 에러에 대해서 알아보자',
+    listContents: `PostgreSQL 실행 시 발생하는 The data directory contains an old postmaster.pid file 에러 해결법. Mac 에서 rm -f postmaster.pid 로 파일을 지우고 재시작하면 된다.`,
     datetime: '2021년 02월 18일 23시 01분',
     tags: [POSTGRE, DATABASE],
+    keywords: ['PostgreSQL', 'postmaster.pid', 'old postmaster.pid file', 'Postgres 실행 오류', 'rm -f postmaster.pid', 'Mac', 'data directory', 'PostgreSQL 에러'],
 };

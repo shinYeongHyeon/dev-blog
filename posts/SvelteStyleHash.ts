@@ -78,7 +78,8 @@ style 에 작성된 것 중에 Svelte 가 필요없다고 판단되는 것 (HTML
 그래서 필요한 경우에는 :global 을 사용해야 한다.
 
 :global 을 사용하면 bundle 에 추가 됨.`,
-  listContents: `Svelte 에서 스타일 유효범위/Hash/전역에 대해서 알아보려고 한다.`,
+  listContents: `Svelte의 style은 해당 컴포넌트 안에서만 유효하며, svelte-로 시작하는 Style Hash 클래스로 유효범위가 만들어진다. 전역 스타일이 필요할 때 :global 선택자를 쓰는 방법과 미사용 CSS가 번들에서 빠지는 점을 알아본다.`,
   datetime: '2021년 06월 21일 00시 09분',
   tags: [SVELTE],
+  keywords: ['svelte', 'style hash', ':global', '스타일 유효범위', 'scoped css', 'svelte 스타일', 'css 스코프'],
 };

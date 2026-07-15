@@ -99,9 +99,9 @@ func main() {
 // DEN
 \`\`\`
 이거 너무 멋있지 않나 ? 이거 때문이라도 go 에 빠질듯…`,
-    listContents: `Go 에서는 꽤 유용한 기능들이 많고 Go 만의 특이점도 많다.
-아래에서 천천히 살펴보자.`,
+    listContents: `Go 함수만의 특징들을 알아본다. 파라미터 타입 생략, 여러 값 반환, 가변 인자 받기, naked return, 함수 종료 후 실행되는 defer까지 Go의 유용한 함수 문법을 예제 코드로 살펴본다.`,
     datetime: '2021년 01월 31일 01시 24분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'function', 'defer', 'naked return', '다중 반환', '가변 인자', 'go 함수'],
     seriesId: GOLANG_TOUR,
 };

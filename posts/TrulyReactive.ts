@@ -105,8 +105,9 @@ component 만이 아닙니다. Svelte 자체가 완전히 새로운 모습과 �
 이번 Release가 힘들었던 만큼, 우리는 거의 끝나갈 것 같지가 않다. 우리는 더 스마트하고, 더 컴팩트한 코드와, 긴 feature 위시리스트를 만들 수 있는 수많은 아이디어를 가지고 있다. Next.js 스타일의 앱 프레임워크인 [Sapper](https://sapper.svelte.dev/)는 Svelte 3을 사용하도록 업데이트되고 있다. Svelte에서 안드로이드와 iOS 앱을 쓸 수 있는 [Svelte Native](https://svelte-native.technology/) 커뮤니티 프로젝트가 탄탄하게 진행되고 있고, 핵심의 더 완벽한 지원을 받을 만하다. 우리는 다른 프레임워크가 가지고 있는 편집기 확장, 구문 강조 표시기, 컴포넌트 키트, 개발 도구 등의 혜택을 아직 받지 못했으며, 우리는 그것을 수정해야 한다. 우리는 정말로 최고의 TypeScript 지원을 추가하고 싶습니다.
 
 하지만 그 동안 우리는 Svelte 3가 웹 앱을 구축하는 가장 좋은 방법이라고 생각합니다. 튜토리얼을 진행하는 데 한 시간이 걸리며, 우리도 당신에게 같은 것을 납득시키기를 바랍니다. Discord 와 깃허브에서 뵙고 싶습니다. 모든 분들, 특히 여러분을 환영합니다.`,
-    listContents: `Svelte 공식문석 번역 : Truly reactive`,
+    listContents: `Svelte 공식문서 번역: Svelte 3 릴리스 글 Truly reactive. 가상 DOM 없이 빌드 타임에 컴파일하는 방식과, this.set이나 훅 대신 할당만으로 반응성이 동작하도록 언어 차원으로 옮긴 Svelte 3의 설계를 소개한다.`,
     datetime: '2021년 01월 31일 17시 41분',
     tags: [SVELTE, TRANSLATION],
+    keywords: ['svelte', 'svelte 3', 'truly reactive', '반응성', 'reactivity', 'svelte 공식문서 번역', '컴파일러'],
     seriesId: SVELTE_TOUR,
 };

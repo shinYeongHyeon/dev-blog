@@ -51,8 +51,9 @@ once 를 추가하면서 딱 한번만 실행이 가능해진다, 참 여러군�
 -   **once** <br><br>
 -   **self**  
     event.target이 element 자체인 경우에만 핸들러를 트리거 <br><br>`,
-    listContents: `Svelte 에서 event 다루는 방법을 간단하게 알아보고 modifier 에 대해서도 알아보도록 한다.`,
+    listContents: `Svelte의 on:click 이벤트 처리 방법과 once, preventDefault, stopPropagation, passive, capture, self 등 이벤트 modifier의 종류와 역할을 예제 코드와 함께 정리한다.`,
     datetime: '2021년 02월 03일 22시 55분',
     tags: [SVELTE],
+    keywords: ['svelte', 'event modifier', 'on:click', 'preventDefault', 'stopPropagation', 'once', 'svelte 이벤트', '이벤트 핸들러'],
     seriesId: SVELTE_TOUR,
 };

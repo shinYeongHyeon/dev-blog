@@ -5,10 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerVolume: IPost = {
     title: '도커 컨테이너와 데이터 공유하기, Docker Volume',
     path: 'DockerVolume',
-    listContents: `도커 이미지로 컨테이너를 생성하면 이미지는 읽기 전용이 되며, 컨테이너의 변경 사항만 별도로 저장해서 각 컨테이너의 정보를 보존한다.
-이러면 데이터가 보관되지 않는 다는 단점이 있는데, 이를 해결하기 위한 것을 알아보자`,
+    listContents: `컨테이너를 삭제하면 변경된 데이터도 함께 사라지는 문제를 도커 볼륨(Volume)으로 해결한다. -v 옵션을 이용한 도커 볼륨 공유, --volumes-from 볼륨 컨테이너, 호스트 볼륨 공유 세 가지 데이터 영속화 방법을 정리했다.`,
     datetime: '2021년 07월 13일 12시 51분',
     tags: [DOCKER],
+    keywords: ['docker', '도커 볼륨', 'docker volume', '데이터 영속성', 'volumes-from', '호스트 볼륨', '컨테이너 데이터 공유', 'postgres'],
     seriesId: ABOUT_DOCKER,
     contents: `
 도커 이미지로 컨테이너를 생성하면 이미지는 읽기 전용이 되며, 컨테이너의 변경 사항만 별도로 저장해서 각 컨테이너의 정보를 보존한다.

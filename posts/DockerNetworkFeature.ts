@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerNetworkFeature: IPost = {
     title: '도커 네트워크 기능',
     path: 'DockerNetworkFeature',
-    listContents: `컨테이너 생성시 기본적으로 브리지를 통해 외부와 통신할 수 있는 호나경을 사용할 수 있지만 사용자의 선택에 따라 여러 네트워크 드라이버를 쓸 수도 있다.`,
+    listContents: `도커가 제공하는 네트워크 드라이버인 브리지, 호스트, 논(none), 컨테이너 네트워크를 알아본다. docker network create로 사용자 정의 브리지를 만들고 inspect, connect, disconnect 명령어 사용법을 정리했다.`,
     datetime: '2021년 07월 14일 21시 17분',
     tags: [DOCKER],
+    keywords: ['docker', '도커 네트워크', '네트워크 드라이버', '브리지 네트워크', '호스트 네트워크', 'docker network create', 'docker network inspect', '컨테이너 네트워크'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 도커 네트워크 기능

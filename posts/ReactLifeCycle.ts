@@ -40,7 +40,8 @@ this.state = {};
 **componentDidUpdate()** 는 유용하게 사용 가능한 **props** 들을 제공해주는데, **prevProps, prevState, snapshot** 을 제공해준다.  
   
 전 상태를 비교할 수 있다는 것!`,
-    listContents: `React 의 생명주기에 대해서 알아보도록 하자`,
+    listContents: `React 컴포넌트 생명주기를 render() 함수를 중심으로 알아본다. constructor, componentDidMount, componentDidUpdate의 호출 순서와 setState로 State를 변경해야 리렌더링되는 이유를 정리했다.`,
     datetime: '2021년 01월 31일 01시 52분',
     tags: [REACT],
+    keywords: ['react', '리액트', '생명주기', 'lifecycle', 'componentDidMount', 'componentDidUpdate', 'setState', 'render'],
 };

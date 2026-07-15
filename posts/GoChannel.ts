@@ -43,8 +43,9 @@ received <-c
 \`\`\`
 
 for 문으로도 쓸 수 있다.`,
-    listContents: `Go 에서 어떻게 보면 큰 핵심 중 하나라고 볼 수 있는 Channel 에 대해서 알아보자`,
+    listContents: `Go 동시성의 핵심인 Channel에 대해 알아본다. make로 채널을 선언하고 goroutine과 함께 채널 연산자로 데이터를 주고받는 방법을 간단한 예제 코드로 살펴본다.`,
     datetime: '2021년 01월 31일 01시 50분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'channel', 'goroutine', '채널', '고루틴', '동시성', 'make'],
     seriesId: GOLANG_TOUR,
 };

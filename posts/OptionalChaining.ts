@@ -33,7 +33,8 @@ test 의 depth1 의 depth2 의 depth3 에 접근하려면, 일단 test 있는지
 ###### ~아름다워~  
   
 [MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Optional_chaining)`,
-    listContents: 'ES2020의 Optional Chaining 에 대해서 알아보자.',
+    listContents: `깊은 Depth를 가진 객체에 접근할 때마다 존재 여부를 일일이 체크하는 번거로움을 ES2020의 Optional Chaining(?.) 문법으로 간결하게 해결하는 방법을 알아본다.`,
     datetime: '2021년 01월 30일 20시 12분',
     tags: [JAVASCRIPT],
+    keywords: ['javascript', '자바스크립트', 'optional chaining', '옵셔널 체이닝', 'ES2020', '객체 접근', 'undefined'],
 };

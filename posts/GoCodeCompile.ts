@@ -37,7 +37,8 @@ go build aSourceFile.go
 파일의 크기를 보면 굉장히 큰 것을 볼 수 있다. 이는 statically linked 됐기 때문이고, 이 것이 의미하는 바는 저 파일을 실행하는데 있어 어떠한 외부 라이브러리도 필요없다는 뜻이다.
 
 \\* 해당 포스팅은 Mastering GO 를 번역해가며 실습하는 과정에서 배운 것을 적은 것이다.`,
-    listContents: `Go 의 장점으로 static linking 에 대해서 간략하게 얘기해 본적이 있고, build 에 대해서도 간략하게 본 적이 있어서, 이번에 그에 관한 포스팅을 진행하고자 한다.`,
+    listContents: `Go 코드를 컴파일하는 방법을 알아본다. go run으로 소스를 실행하고 go build 명령어로 statically linked 실행 파일을 만들며, static linking 덕분에 외부 라이브러리 없이 실행 가능한 이유를 살펴본다.`,
     datetime: '2021년 02월 08일 00시 10분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'go build', 'static linking', '컴파일', '정적 링킹', '실행 파일', 'mastering go'],
 };

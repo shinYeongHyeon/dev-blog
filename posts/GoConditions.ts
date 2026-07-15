@@ -83,8 +83,9 @@ func canIDrinkInKoreaSwitchVer(age int) bool {
   }
 }
 \`\`\``,
-    listContents: `기본적인 문법인 for, if, statement 에 대해서 알아보자`,
+    listContents: `Go에는 forEach 없이 for문만 존재한다. range를 활용한 반복문 작성법과 if, switch문 안에서만 쓸 수 있는 변수를 선언하는 Go만의 조건문 문법을 예제 코드로 알아본다.`,
     datetime: '2021년 01월 31일 01시 37분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'for', 'range', 'if', 'switch', 'go 반복문', 'go 조건문'],
     seriesId: GOLANG_TOUR,
 };

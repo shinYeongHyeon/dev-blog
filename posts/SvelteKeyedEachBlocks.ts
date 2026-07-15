@@ -84,8 +84,9 @@ Thing.svelte 에서 **const initial = current** 구문이 초기화 시에만 cu
 
 혹은 조금 trick을 써서 Thing.svelte 에서 [이전 포스팅](https://shinyeonghyeon.co.kr/posts/SvelteStatement)에서 배운 $: 를 활용하여 _**$: initial = currnet;**_ 로 해주어도 해당 예제에서는 똑같이 동작은 한다.
 `,
-  listContents: `Svelte 에서의 Keyed Each blocks`,
+  listContents: `Svelte 튜토리얼의 Keyed each blocks 정리. each 블록에서 배열의 첫 항목을 삭제할 때 컴포넌트 초기화 값이 의도와 다르게 유지되는 이유와, (thing.id)처럼 key를 지정해 해결하는 방법을 예제로 설명한다.`,
   datetime: '2021년 02월 02일 20시 13분',
   tags: [SVELTE],
+  keywords: ['svelte', 'keyed each blocks', 'each key', 'svelte tutorial', '컴포넌트 초기화', '반복 블록', 'svelte each'],
   seriesId: SVELTE_TOUR,
 };

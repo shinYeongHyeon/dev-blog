@@ -46,9 +46,8 @@ Cron 은 스케쥴러라고 보면 됩니다.
 **\*\\30\** 은 30분 마다 입니다, 만약 해당 식을 가진 Cron Job 이 (Cron이 실행 돼 도는 것을 Cron Job) 6시 15분에 시작했다면 첫 실행은 6시 45분입니다.
 
 **30** 은 30분 일 때입니다. 만약 해당 식을 가진 Cron Job 이 돈다면, 실행시작과 상관없이 30분에 실행됩니다.`,
-    listContents: `Cron 은 스케쥴러라고 보면 됩니다. \n
-예를 들어, 한 시간 마다 나한테 물을 먹으라고 알려줘, 매일 7시에 날 깨워줘! 와 같은 거죠. \n
-예전에는 유닉스 계열의 Job Scheduler 에서만 쓰였는데, 요즘엔 언어 자체에서 지원이 되기도 하죠.`,
+    listContents: `Cron 표현식은 매일 7시, 30분마다 같은 반복 일정을 정규식처럼 나타내는 스케줄러 문법입니다. NestJS Task Scheduling 의 6자리 Cron 식 구조와 자주 쓰는 표현 예제, */30 과 30 의 차이를 정리했습니다.`,
     datetime: '2021년 02월 08일 00시 55분',
     tags: [ETC],
+    keywords: ['cron', 'cron 표현식', '크론 표현식', '스케줄러', 'NestJS', 'Task Scheduling', 'cron job', 'job scheduler'],
 };

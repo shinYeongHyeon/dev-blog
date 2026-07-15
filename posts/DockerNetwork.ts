@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerNetwork: IPost = {
     title: '도커 네트워크와 그 구조',
     path: 'DockerNetwork',
-    listContents: `이전에 컨테이너의 네트워크 인터페이스에 eth0와 lo 네트워크 인터페이스가 있는 것을 확인하였다.`,
+    listContents: `도커가 컨테이너마다 호스트에 자동 생성하는 가상 네트워크 인터페이스 veth와, 이를 호스트의 eth0와 연결해 외부 통신을 가능하게 하는 docker0 브리지의 구조를 알아본다. 컨테이너 내부 IP 할당 방식도 함께 정리했다.`,
     datetime: '2021년 07월 13일 21시 52분',
     tags: [DOCKER],
+    keywords: ['docker', '도커 네트워크', 'veth', 'docker0', '브리지 네트워크', '네트워크 인터페이스', '컨테이너 IP', 'eth0'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 도커 네트워크 구조

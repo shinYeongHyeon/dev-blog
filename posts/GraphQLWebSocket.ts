@@ -52,7 +52,8 @@ export class ExampleResolver {
 }
 \`\`\`
 그 뒤에 사용처에서 **Inject Decorator** 를 활용해서 import 해주고, 사용하면 끝!`,
-    listContents: `NestJS 에서 GraphQL을 그리고 Websocket으로 사용해보자`,
+    listContents: `GraphQL 은 기본이 HTTP 통신이지만 PubSub 을 쓰면 WebSocket 도 가능하다. NestJS 에서 graphql-subscriptions 의 PubSub 을 Global Module 로 만들어 쓰는 방법을 정리했다.`,
     datetime: '2021년 01월 31일 01시 08분',
     tags: [NESTJS, GRAPHQL],
+    keywords: ['GraphQL', 'WebSocket', 'PubSub', 'NestJS', 'graphql-subscriptions', 'Subscription', 'Global Module', '실시간 통신'],
 };

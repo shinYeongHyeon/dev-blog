@@ -5,9 +5,10 @@ import { ABOUT_TERRAFORM } from "./presentationals/Series";
 export const TerraformEC2RDS: IPost = {
     title: 'Terraform 으로 AWS EC2, RDS 생성 해보기',
     path: 'TerraformEC2RDS',
-    listContents: `이번 글에서는 Terraform 을 활용해서 AWS EC2, RDS 를 생성해보고자 한다.`,
+    listContents: `Terraform 으로 AWS EC2 와 RDS 를 생성해본다. terraform init 부터 aws_instance, aws_db_instance 리소스 정의와 plan, apply, destroy 까지 실습 과정을 정리했다.`,
     datetime: '2021년 07월 09일 22시 57분',
     tags: [TERRAFORM],
+    keywords: ['Terraform', 'AWS', 'EC2', 'RDS', 'aws_instance', 'aws_security_group', 'terraform apply', '테라폼', 'IaC'],
     seriesId: ABOUT_TERRAFORM,
     contents: `
 ## 개요

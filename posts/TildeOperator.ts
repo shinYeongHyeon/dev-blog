@@ -49,7 +49,8 @@ console.log(~~num2);
 
 ![R1280x0-17](https://github.com/shinYeongHyeon/dev-blog/assets/74130738/3c10f4fd-8fa8-4add-a871-24668dc4259b)
 `,
-    listContents: `오늘은 틸드 연산자 (~), Double tilde 에 대해서 알아보고자 한다.`,
+    listContents: `Bitwise NOT인 틸드(~) 연산자를 indexOf의 -1 반환값 처리에 활용하는 방법과, Math.floor()와 비슷하지만 음수에서 다르게 동작하는 double tilde(~~)를 예제로 알아본다.`,
     datetime: '2021년 06월 19일 19시 52분',
     tags: [JAVASCRIPT],
+    keywords: ['javascript', '자바스크립트', 'tilde 연산자', '틸드 연산자', 'bitwise not', 'double tilde', 'indexOf', '비트 연산자'],
 };

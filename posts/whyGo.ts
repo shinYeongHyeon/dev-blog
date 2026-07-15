@@ -31,9 +31,9 @@ Go 에 대해서 여러 아티클이나 영상을 접하다 보니 가장 큰 �
 7. 갓-글  
 
 물론 단점들도 있고, 익히 듣기도 했지만, 단점이 없는 게 어디 있으랴, 일단 많이 배워보자!`,
-    listContents: `갑자기 Go 언어를 배워보고자 하는 욕구가 뿜뿜하였다. \n
-Go 에 대해서 여러 아티클이나 영상을 접하다 보니 가장 큰 장점을 속도가 겁나 빠르다 인데, 이 매력에 이끌리게 되어서, 좀 더 찾아보고 내가 배워야 할 이유가 충분하더라.`,
+    listContents: `Go 언어를 배우기로 결심한 이유를 정리했다. 컴파일 언어의 빠른 속도, 타입을 강제하는 정적 언어, 동시성 지원, Garbage Collection, static linking 기본 지원 등 Golang의 장점들을 살펴본다.`,
     datetime: '2021년 01월 30일 13시 25분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'static linking', 'garbage collection', '동시성', '정적 언어', '컴파일 언어', 'go 장점'],
     seriesId: GOLANG_TOUR,
 };

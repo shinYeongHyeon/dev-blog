@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerImageAndContainer: IPost = {
     title: 'Docker 이미지와 컨테이너',
     path: 'DockerImageAndContainer',
-    listContents: `이미지와 컨테이너 : 도커 엔진에서 사용하는 기본 단위이자 핵심`,
+    listContents: `도커 엔진의 핵심 단위인 이미지와 컨테이너의 개념을 정리했다. 저장소/이미지이름:태그로 구성되는 도커 이미지 이름 구조와, 이미지를 읽기 전용으로 사용하며 변경 사항만 컨테이너 계층에 저장하는 원리를 다룬다.`,
     datetime: '2021년 06월 28일 00시 10분',
     tags: [DOCKER],
+    keywords: ['docker', '도커 이미지', '도커 컨테이너', 'docker hub', '이미지 태그', '컨테이너 계층', '이미지 레이어', '도커 기본 개념'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 도커 이미지와 컨테이너

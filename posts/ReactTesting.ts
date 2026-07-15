@@ -4,9 +4,10 @@ import { REACT } from './presentationals/Tags';
 export const ReactTesting: IPost = {
     title: 'React Page Render Test With Mock',
     path: 'ReactTesting',
-    listContents: `이전 포스팅에서 Mock에 대해서 알아보았다. React 에서 활용하는 법에 대해서 알아보자`,
+    listContents: `@testing-library와 jest.mock을 활용한 React 페이지 렌더 테스트 방법을 알아본다. 라우터 컴포넌트를 Mock 처리해 App 컴포넌트 렌더 테스트 자체에 집중하는 예제를 다룬다.`,
     datetime: '2021년 09월 05일 15시 23분',
     tags: [REACT],
+    keywords: ['react', '리액트', 'testing-library', 'jest.mock', 'jest', 'mock', '렌더 테스트', '프론트엔드 테스트'],
     contents: `
 ## 컴포넌트/페이지 Testing
 

@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerMySQL: IPost = {
     title: 'Docker 로 워드프레스, mysql 실행하기',
     path: 'DockerMySQL',
-    listContents: `데이터베이스와 워드프레스 웹 서버 컨테이너를 연동해 워드프레스 기반 블로그 서비스를 만들어 보도록하자`,
+    listContents: `docker run으로 mysql 데이터베이스 컨테이너와 워드프레스 웹 서버 컨테이너를 생성하고 --link 옵션으로 연동해 블로그 서비스를 구축한다. -d(Detached 모드), -e(환경변수) 옵션의 의미도 함께 정리했다.`,
     datetime: '2021년 07월 10일 12시 04분',
     tags: [DOCKER],
+    keywords: ['docker', 'mysql', 'wordpress', '워드프레스', '도커 컨테이너 연동', 'docker link', 'Detached 모드', '환경변수', '컨테이너 애플리케이션'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 컨테이너 애플리케이션 구축하기

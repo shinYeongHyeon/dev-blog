@@ -31,7 +31,8 @@ Tada!! 아래와 같이 된다.
 
 ~난 이런거에 몹시 행복한편..~
 `,
-    listContents: 'Github 저장소의 불필요한 사용언어를 바꿔보자 ! css OUT!',
+    listContents: `Github 저장소의 대표 언어가 JavaScript, CSS 등으로 잘못 표시될 때 바꾸는 방법. .gitattributes 파일에 linguist-detectable=false 를 지정해 원하지 않는 언어를 분석에서 제외하는 과정을 정리했다.`,
     datetime: '2021년 01월 31일 21시 38분',
     tags: [GIT],
+    keywords: ['Github', '.gitattributes', 'linguist-detectable', '저장소 언어 변경', 'repository language', 'linguist', 'Github 대표 언어', 'git'],
 };

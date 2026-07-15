@@ -37,7 +37,8 @@ ValidationPipe 에서 주로 사용하는 옵션은 위와 같은데 하나 씩 
 
 위와 같이 자동으로 유효성검사해주고 알아서 에러를 뱉어내주니 얼마나 감사한가…
 사랑해`,
-    listContents: `NestJS 를 사용하면서 검증을 쉽게 해주는 validationPipe 에 대해 알아보자.`,
+    listContents: `NestJS 의 ValidationPipe 로 DTO 유효성 검사를 자동화하는 방법. useGlobalPipes 전역 적용과 whitelist, forbidNonWhitelisted, transform 옵션의 의미를 정리했다.`,
     datetime: '2021년 01월 30일 15시 01분',
     tags: [NESTJS],
+    keywords: ['NestJS', 'ValidationPipe', 'DTO', '유효성 검사', 'whitelist', 'forbidNonWhitelisted', 'transform', 'useGlobalPipes'],
 };

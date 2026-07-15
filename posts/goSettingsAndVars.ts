@@ -45,9 +45,9 @@ age := 30
 age = 31 // to be ERROR !
 \`\`\`
 `,
-    listContents: `Go 를 세팅하는 법과 변수/상수에 대해 알아보자
-Go 는 타입을 강력하게 정의하기 때문에, typescript를 좋아하는 나에게는 너무 좋다.`,
+    listContents: `Go 개발 환경 세팅 시 알아야 할 GO_PATH 디렉토리와 main 패키지 기본 구조, fmt 라이브러리 사용법을 알아보고, var와 const, short assignment statement로 변수와 상수를 선언하는 방법을 정리했다.`,
     datetime: '2021년 01월 30일 13시 52분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'GOPATH', 'fmt', '변수', '상수', 'short assignment statement', 'go 환경설정'],
     seriesId: GOLANG_TOUR,
 };

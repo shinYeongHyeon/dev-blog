@@ -4,9 +4,10 @@ import { GOLANG } from './presentationals/Tags';
 export const GoLangExit: IPost = {
     title: 'runtime.Goexit vs os.Exit',
     path: 'GoLangExit',
-    listContents: `Golang 에서 프로그램을 종료하는 것에 대해서 알아보자`,
+    listContents: `Golang의 종료 메소드 os.Exit()과 runtime.Goexit()의 차이를 알아본다. os.Exit은 defer 함수를 무시하고 즉시 종료하지만, Goexit은 deferred 함수를 모두 실행한 뒤 고루틴을 종료한다.`,
     datetime: '2021년 08월 15일 19시 16분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'os.Exit', 'runtime.Goexit', 'defer', 'goroutine', '고루틴', '프로그램 종료'],
     contents: `
 Golang 에서 프로그램을 종료하는 것에 대해서 제일 처음 알게 되는 것이 아마도 **os.Exit()** 일 것이다.  
 그러나, 오늘은 다른 종료 메소드인 **runtime.Goexit()** 과 비교하면서 둘의 차이점에 대해서, 그리고 runtime.Goexit() 를 써야하는 경우에 대해서 알아보자.

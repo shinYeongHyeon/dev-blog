@@ -4,9 +4,10 @@ import { GIT } from './presentationals/Tags';
 export const GitDelete: IPost = {
     title: 'Git 에 잘못올린 .idea 파일 등 지우기',
     path: 'GitDelete',
-    listContents: `개발을 하다보면 Git에 레포지토리/프로젝트를 올릴 때 실수로 .idea 파일 등 및 올라가면 안되는 파일을 올리는 경우가 더러 있다.`,
+    listContents: `Git 에 실수로 올린 .idea 폴더 같은 파일을 지우는 방법. .gitignore 에 추가하는 것만으로는 이미 올라간 파일이 지워지지 않으므로, git rm --cached 명령어로 원격저장소에서 제거하고 push 하는 과정을 정리했다.`,
     datetime: '2021년 08월 06일 23시 21분',
     tags: [GIT],
+    keywords: ['git rm --cached', '.gitignore', '.idea 삭제', 'git 파일 삭제', '원격저장소', 'git 실수로 올린 파일', 'IntelliJ', 'git push'],
     contents: `
 개발을 하다보면 Git에 레포지토리/프로젝트를 올릴 때 실수로 .idea 파일 등 및 올라가면 안되는 파일을 올리는 경우가 ~나는~ 더러 있다.
 

@@ -5,9 +5,10 @@ import { ABOUT_DOCKER } from "./presentationals/Series";
 export const DockerContainerPublic: IPost = {
     title: '도커 컨테이너를 외부에 노출/제공 하기!',
     path: 'DockerContainerPublic',
-    listContents: `컨테이너 공개해버리기`,
+    listContents: `도커 컨테이너는 기본적으로 172.17.0.x 대역의 내부 IP를 할당받아 호스트 밖에서는 접근할 수 없다. docker run의 -p 옵션으로 호스트 포트와 컨테이너 포트를 바인딩해 아파치 웹서버를 외부에 노출하는 방법을 정리했다.`,
     datetime: '2021년 07월 04일 20시 20분',
     tags: [DOCKER],
+    keywords: ['docker', '도커 컨테이너', '포트 바인딩', 'docker run -p', '포트 포워딩', 'NAT', '컨테이너 외부 노출', 'apache'],
     seriesId: ABOUT_DOCKER,
     contents: `
 ## 컨테이너를 외부에 노출하기

@@ -199,8 +199,9 @@ function MoreRealisticComponent(props) {
 가상 DOM은 기능이 아닙니다. 이는 목적을 위한 수단이며, 선언적이고 state-driven UI 개발입니다. Virtual DOM은 state 전환에 대해 생각하지 않고도 애플리케이션을 구축할 수 있으며 일반적으로 성능이 충분하기 때문에 유용합니다. 즉, 버그 코드가 줄어들고, 지루한 작업 대신 창의적인 작업에 더 많은 시간이 소비됩니다.
 
 하지만 가상 DOM을 사용하지 않고도 유사한 프로그래밍 모델을 얻을 수 있다는 것이 밝혀졌습니다. 바로 여기에서 Svelte가 등장합니다.`,
-    listContents: `Svelte 공식문석 번역 : No virtual DOM`,
+    listContents: `Svelte 공식문서 번역: Virtual DOM is pure overhead. 가상 DOM이 빠르다는 밈의 유래와 diffing 비용, 불필요한 재계산 문제를 짚고, 빌드 타임에 변경 지점을 아는 Svelte 컴파일러의 방식을 설명한다.`,
     datetime: '2021년 01월 31일 16시 19분',
     tags: [SVELTE, TRANSLATION],
+    keywords: ['svelte', 'virtual dom', '가상 dom', 'diffing', 'react', 'svelte 공식문서 번역', '오버헤드', '렌더링 성능'],
     seriesId: SVELTE_TOUR,
 };

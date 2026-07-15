@@ -87,8 +87,9 @@ func (theAccount *Account) Deposit(amount int) {
 또한 메소드는 func 와 메소드명 Deposit 사이에 어떤 Structure 를 받는지 명시해주면 되는데,  
 여기서도 theAccount \\*Account 로 받는 이유는 그냥 theAccount Account 로 받을 경우엔 값이 변화 되지 않기 때문이다.  
 이에 대해서는 어렵다면 포인터의 개념을 조금 더 이해하고 보면 쉽게 이해될 것.`,
-    listContents: `Go 의 구조체에 Method, 그리고 포인터에 대해 알아보자.`,
+    listContents: `Go 구조체에 메소드를 추가하는 방법과 포인터 리시버를 알아본다. 생성자가 없는 Go에서 주소를 직접 리턴해 생성자를 대신하는 패턴과 errors.New로 에러를 미리 정의하는 방식을 예제로 살펴본다.`,
     datetime: '2021년 01월 31일 01시 48분',
     tags: [GOLANG],
+    keywords: ['go', 'golang', 'pointer', 'method', 'struct', '포인터 리시버', '구조체 메소드', 'errors.New'],
     seriesId: GOLANG_TOUR,
 };
