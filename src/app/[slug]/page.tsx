@@ -1,13 +1,12 @@
-import MarkdownCode from 'component/markdown/MarkdownCode'
+import AdUnit from 'component/AdUnit'
+import PostMarkdown from 'component/markdown/PostMarkdown'
 import SeriesItem from 'component/SeriesItem'
 import { parseKoreanDatetime } from 'lib/date'
+import { splitMarkdownAtMidHeading } from 'lib/markdown'
 import map from 'lodash/map'
 import { Metadata } from 'next'
 import { allPosts } from 'posts/AllPosts'
 import { IPost } from 'posts/interfaces/IPost'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeRaw from 'rehype-raw'
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -59,6 +58,8 @@ export default async function Post({ params }: Props) {
     series = allPosts.filter((otherPost) => post.seriesId === otherPost.seriesId)
   }
 
+  const splitContents = splitMarkdownAtMidHeading(post.contents)
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -96,49 +97,18 @@ export default async function Post({ params }: Props) {
       </div>
       <div className="grid grid-cols-12 gap-4 my-4">
         <div className="col-span-10 text-gray-100">
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeRaw]}
-            components={{
-              code: ({ node, children, ...props }: any) => {
-                const content = String(children);
-                
-                if (content.includes('\n')) {
-                  return (
-                    <MarkdownCode>
-                      <code {...props}>{children}</code>
-                    </MarkdownCode>
-                  );
-                }
-                
-                return (
-                  <code className="px-1.5 py-0.5 bg-gray-800 rounded text-sm font-mono">
-                    {children}
-                  </code>
-                );
-              },
-              a: ({ children, ...props }) => {
-                  return (
-                      <a
-                          {...props}
-                          className="text-blue-300 hover:text-blue-300 hover:underline"
-                      >
-                          {children}
-                      </a>
-                  );
-              },
-              strong: ({ children, ...props }) => {
-                  return (
-                      <b
-                          {...props}
-                          className="text-[105%]"
-                      >{children}</b>
-                  );
-              },
-            }}
-          >
-            {post.contents}
-          </ReactMarkdown>
+          {splitContents ? (
+            <>
+              <PostMarkdown>{splitContents[0]}</PostMarkdown>
+              <AdUnit slot="2571849670" format="fluid" layout="in-article" />
+              <PostMarkdown>{splitContents[1]}</PostMarkdown>
+            </>
+          ) : (
+            <PostMarkdown>{post.contents}</PostMarkdown>
+          )}
+          <div className="mt-8">
+            <AdUnit slot="7632604665" fullWidthResponsive />
+          </div>
         </div>
         <div className="col-span-2">
         {series.length > 0 && (
